@@ -84,3 +84,27 @@ test("the operator panel is off outside demo mode", async () => {
   );
   expect(await screen.findByText(/Demo mode is off/)).toBeInTheDocument();
 });
+
+test("the metrics page shows override, AI, write-back and feed metrics, UNKNOWN when there is no data", async () => {
+  const { MetricsPage } = await import("./MetricsPage");
+  stub({
+    "/admin/metrics": {
+      at: "2026-11-09T08:00:00-05:00",
+      feeds: [{ feed: "claims", stream: "claims_837", age_hours: 1, stale: true, reason: "data as of 2026-09-25 (45 days)" }],
+      signals_per_rule: { run_day: "2026-11-09", counts: { NO_CRITICAL_MED_ON_HAND: 1 } },
+      override_rate: { window_days: 7, rate: 0.5, overrides: { override_not_now: 1 }, calls_started: 1 },
+      ai: { drafts: 0, sentences: 0, unsupported_sentence_rate: null, major_edit_ratio: null },
+      writeback: { pending: 1, oldest_pending_seconds: 0, alerted: 0, synced: 0, median_sync_lag_seconds: null },
+    },
+  });
+  render(
+    <MemoryRouter>
+      <MetricsPage />
+    </MemoryRouter>,
+  );
+  expect(await screen.findByTestId("metric-override")).toHaveTextContent("50%");
+  expect(screen.getByTestId("metric-ai")).toHaveTextContent("UNKNOWN");
+  expect(screen.getByTestId("metric-writeback")).toHaveTextContent("1");
+  expect(screen.getByTestId("metric-feeds")).toHaveTextContent("stale: data as of 2026-09-25");
+  expect(screen.getByTestId("metric-signals")).toHaveTextContent("NO_CRITICAL_MED_ON_HAND: 1");
+});

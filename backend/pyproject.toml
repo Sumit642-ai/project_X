@@ -24,6 +24,8 @@ dev = [
     "ruff>=0.8",
     "mypy>=1.13",
     "types-PyYAML",
+    "pytest-cov>=5",
+    "pip-audit>=2.7",
 ]
 
 [build-system]
@@ -39,6 +41,10 @@ addopts = "-ra"
 markers = [
     "live: calls the real Anthropic API; skipped unless pytest is run with --live",
 ]
+
+[tool.coverage.run]
+branch = false
+omit = ["*/__main__.py"]
 
 [tool.ruff]
 target-version = "py312"

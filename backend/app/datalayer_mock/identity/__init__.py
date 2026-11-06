@@ -1,4 +1,5 @@
-"""Identity: golden member records, links from source records, and review decisions."""
+"""Simulated HiLabs data layer (out of CaseCompass scope): identity. Golden member records,
+links from source records, and review decisions."""
 
 from app.datalayer_mock.identity.decisions import (
     LinkDecisionError,

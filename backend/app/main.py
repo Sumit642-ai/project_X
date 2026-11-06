@@ -17,6 +17,7 @@ from app.api.documents import router as documents_router
 from app.api.encounters import router as encounters_router
 from app.api.health import router as health_router
 from app.api.members import router as members_router
+from app.api.metrics import router as metrics_router
 from app.api.queue import router as queue_router
 from app.core.config import get_settings
 from app.core.logging import configure_logging, register_names
@@ -112,6 +113,7 @@ def create_app() -> FastAPI:
         documents_router,
         ai_draft_router,
         demo_router,
+        metrics_router,
     ):
         app.include_router(router)
 

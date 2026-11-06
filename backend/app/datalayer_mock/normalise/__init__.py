@@ -1,4 +1,5 @@
-"""Normalisation: raw codes -> local terminology concepts, never dropping what does not map."""
+"""Simulated HiLabs data layer (out of CaseCompass scope): normalisation. Raw codes -> local
+terminology concepts, never dropping what does not map."""
 
 from app.datalayer_mock.normalise.concepts import (
     normalise_claim_row,

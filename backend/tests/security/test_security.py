@@ -1,6 +1,7 @@
 """Security: CORS, sign-in rate limit, token expiry, secrets, and PHI-free logs."""
 
 import logging
+import os
 import re
 from pathlib import Path
 
@@ -74,12 +75,14 @@ TEXT_SUFFIXES = {".py", ".ts", ".tsx", ".js", ".mjs", ".json", ".yaml", ".yml", 
 
 
 def _repo_files() -> list[Path]:
+    """Source files, pruning dependency and build directories while walking."""
     files = []
-    for path in REPO_ROOT.rglob("*"):
-        if any(part in SKIP_DIRS for part in path.relative_to(REPO_ROOT).parts):
-            continue
-        if path.is_file() and (path.suffix in TEXT_SUFFIXES or path.name.startswith(".env")):
-            files.append(path)
+    for folder, dirs, names in os.walk(REPO_ROOT):
+        dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
+        for name in names:
+            path = Path(folder) / name
+            if path.suffix in TEXT_SUFFIXES or name.startswith(".env"):
+                files.append(path)
     return files
 
 

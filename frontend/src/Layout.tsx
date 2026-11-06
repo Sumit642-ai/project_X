@@ -116,6 +116,16 @@ export function Layout() {
               </NavLink>
             </li>
           ))}
+          {user?.role === "supervisor" && (
+            <li>
+              <NavLink
+                to="/admin/metrics"
+                className={({ isActive }) => `block rounded px-2 py-1 ${isActive ? "bg-blue-800 font-semibold text-white" : "text-slate-900 hover:bg-slate-100"}`}
+              >
+                Metrics
+              </NavLink>
+            </li>
+          )}
           {demo && (
             <li>
               <NavLink

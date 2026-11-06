@@ -4,6 +4,7 @@ import { Layout } from "./Layout";
 import { AuthProvider, useAuth } from "./lib/auth";
 import { CallPage } from "./pages/Call/CallPage";
 import { DemoAdminPage } from "./pages/DemoAdminPage";
+import { MetricsPage } from "./pages/MetricsPage";
 import { Member360Page } from "./pages/Member360Page";
 import { LoginPage, MembersPage, TasksPage } from "./pages/OtherPages";
 import { OldWayPage } from "./pages/OldWayPage";
@@ -28,6 +29,7 @@ export function AppRoutes() {
         <Route path="/members/:id/call" element={<CallPage />} />
         <Route path="/tasks" element={<TasksPage />} />
         <Route path="/demo-admin" element={<DemoAdminPage />} />
+        <Route path="/admin/metrics" element={<MetricsPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/queue" replace />} />
     </Routes>

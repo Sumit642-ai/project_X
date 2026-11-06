@@ -153,9 +153,16 @@ def _manifest(ds: Dataset, files: dict[str, tuple[bytes, int]], seed: int) -> di
     }
 
 
-def generate(out_dir: Path, seed: int = SEED) -> dict[str, Any]:
-    """Write every raw feed file and MANIFEST.json under out_dir; return the manifest."""
+def generate(out_dir: Path, seed: int = SEED, background_members: int = 0) -> dict[str, Any]:
+    """Write every raw feed file and MANIFEST.json under out_dir; return the manifest.
+
+    background_members > 45 clones the background up to that many (performance runs only).
+    """
     ds = build_dataset(seed)
+    if background_members:
+        from app.synth.scale import scale_dataset
+
+        scale_dataset(ds, background_members)
     files = _render(ds)
     manifest = _manifest(ds, files, seed)
 

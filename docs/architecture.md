@@ -1,23 +1,99 @@
-# Architecture notes
+# CaseCompass architecture
 
-## Shape
+Synthetic data only. Product rules are in [CLAUDE.md](../CLAUDE.md), and where each rule is
+enforced is in [RULES_AUDIT.md](RULES_AUDIT.md). What is mocked, and what a pilot needs, is in
+[LIMITATIONS.md](LIMITATIONS.md). The demo script is [DEMO.md](DEMO.md).
+
+## Layers
 
 ```
-browser ── Vite dev server (:5173) ──/api/*──▶ FastAPI (:8000) ──▶ Postgres 16
+browser (React 19, Vite)  --/api/*-->  FastAPI app (backend/app)  -->  Postgres 16 (SQLite in tests and demo)
+                                            |
+                                            +--> mock CM platform (backend/mock_cm): the system of record for write-back
+                                            +--> Anthropic API (AI note draft only; optional)
 ```
 
-- **backend/app/main.py** - `create_app()` factory; routers live in `app/api/`.
-- **backend/app/core/config.py** - `Settings` (pydantic-settings) from env vars and `.env`; `get_settings()` is cached.
-- **backend/app/core/clock.py** - `Clock` protocol, `FixedClock` (reference instant 2026-11-09T08:00 America/New_York) and `SystemClock`. `get_clock()` is the FastAPI dependency. This is the only module allowed to read the wall clock (ruff `TID251`).
-- **backend/app/db/** - `Base` (declarative), engine/session factory created lazily, `get_db()` dependency.
-- **backend/alembic/** - migrations; `env.py` takes the URL from `Settings` unless `sqlalchemy.url` is set explicitly (tests use SQLite this way).
+| Layer | Where | Owns |
+|---|---|---|
+| Simulated HiLabs data layer | `app/datalayer_mock/` (ingest, normalise, identity), `app/facts/conflicts.py` | Landing and validating feed files, staging, terminology mapping, golden member records and links, conflict detection. **Out of CaseCompass scope.** It *simulates the HiLabs data layer*, and its output is labelled "flagged by data layer". |
+| Facts | `app/facts/` | Append-only Facts with lineage, current-state projections (contacts, consents, documents), freshness, UNKNOWN. |
+| Signals and scoring | `app/signals/`, `app/scoring/` | 16 explainable rules; score = 40R + 30U + 20M + 10A, tiers, rank. Every signal and score stores its input fact IDs. |
+| Consent policy | `app/consent/policy.py` | Every call, SMS, third-party, transcription and Part 2 decision, in one module. |
+| Workbench and encounters | `app/workbench/`, `app/encounters/` | Queue, member 360, actions, audit, the call workflow, tasks. |
+| Write-back | `app/writeback/` | Outbox, idempotent conditional writes to the CM platform, the field mapping (including the AI guard). |
+| AI draft | `app/ai_draft/` | Note draft from the transcript: validation, logs, guardrail metrics. Text only. |
+| Platform | `app/core/` (settings, clock, logging), `app/api/` (routes, auth, rate limit), `app/observability.py` | The injected Clock, structured masked logs, `/metrics`. |
+| Demo | `app/demo/`, `scripts/demo.mjs` | `make demo`, the movable clock and the operator toggles (DEMO_MODE only). |
+
+## Data flow
+
+1. **Nightly (or `make seed` / `make demo`):**
+   - Synthetic feed files are written to `data/raw/`. The ingest step lands each file immutably, validates it against its contract, and stages it (`stg_*`), or quarantines it with the previous load still active.
+   - Normalisation and identity matching run next.
+   - Facts are built only behind auto-linked or confirmed links. Projections and conflicts are rebuilt.
+   - Signals are evaluated per member, then scores and ranks are stored per day.
+   - `make perf` times this pipeline with 5,000 background members.
+2. **Daytime, read path:**
+   - `/queue` reads the stored day's `member_scores` and signals.
+   - `/members/{id}/360` builds a snapshot from Facts, with Part 2 masked and missing data shown as UNKNOWN with a reason.
+3. **Daytime, call path:**
+   - Dial (simulated), then verify identity, then the live notes and the optional AI draft.
+   - Wrap-up confirms fields: high-risk ones one by one. Tasks are created from signals (`signal_handles`), and the member is re-scored.
+   - Save writes to the outbox, then conditionally to the CM platform. On sync, confirmed fields become `cm_confirmed` Facts and resolved conflicts close.
+4. **Intraday data (demo clock, or a real feed):**
+   - New files go through the same ingest, then the refresh runs.
+   - `resolve_tasks_by_data` closes tasks that a matching Fact answers, such as a fill of the same drug or a coverage decision.
+
+## Data model (main tables)
+
+| Table | Holds | Notes |
+|---|---|---|
+| `loads`, `load_errors`, `stg_*` | Every file received, with its status (PASS or QUARANTINE), row errors and staged rows | Landing files are read-only. |
+| `members`, `member_links`, `link_audit` | Golden records, source-record links with confidence and field scores, every human decision | Below 0.90 a person decides. |
+| `norm_*`, `unmapped_codes` | Mapped diagnoses, medications and labs; codes that did not map | Raw values are kept. |
+| `facts` | Every stored value: type, key, value, source_system, source_record_id, event_date, loaded_at, confidence, status (raw, member_reported, cm_confirmed), sensitivity | Append-only (ORM and DB triggers); only `superseded_by` may be set, once. |
+| `conflicts`, `conflict_facts` | Disagreements between sources, with their Facts | Only people resolve them; medication conflicts need the prescriber. |
+| `contact_points`, `consents`, `documents` | Current-state projections rebuilt from Facts | Consent validity is decided only in `policy.py`. |
+| `signals`, `member_scores`, `daily_metrics` | Per-day signals (with input fact IDs and deadlines) and scores (with R, U, M, A inputs) | Explainable by construction. |
+| `users`, `assignments`, `snoozes`, `audit_events` | Seeded users (with pod), caseloads, deferrals, every view and action | `audit_events` is append-only (trigger; REVOKE on Postgres). |
+| `encounters`, `encounter_fields`, `tasks`, `signal_handles`, `notifications` | Calls, the 40-field template state, tasks (with resolution by data), handled signals | |
+| `writeback_outbox` | Each save: idempotency key, payload, base version, attempts, status | Status moves saved, then syncing, then synced (or alerted). |
+| `ai_logs`, `ai_drafts`, `ai_guardrail_metrics` | Every prompt and output, validated drafts, per-encounter edit and support metrics | `ai_logs` is append-only. |
+
+## Failure handling
+
+| Failure | What happens | Where |
+|---|---|---|
+| A feed file is malformed, or its layout changed | Quarantined with the reason. The previous good load stays active and nothing reaches staging. | `datalayer_mock/ingest/pipeline.py` |
+| A feed is late or paused | The stream is marked stale. The queue shows a banner (red for ADT), and the 360 offers **Add discharge** while ADT is down. | `workbench/feeds.py`, `POST /members/{id}/discharges` |
+| A code does not map | Kept by its raw name and listed in `unmapped_codes` (`GET /admin/unmapped-codes`). | `datalayer_mock/normalise/run.py` |
+| An identity match is uncertain | 0.70 to 0.89 waits for a person (banner, and charting is paused). Below 0.70, no link. | `datalayer_mock/identity` |
+| Sources disagree | A conflict card, flagged by data layer. Never auto-resolved; medication conflicts need the prescriber's decision. | `facts/conflicts.py`, `writeback/service.py` |
+| The CM platform is down | The save goes to the outbox ("Saved here, syncing to record") and retries with exponential backoff. After 2 hours a supervisor is alerted. The idempotency key prevents duplicates. | `writeback/service.py`, `writeback/worker.py` |
+| The CM record changed since it was opened | 409 with both versions. Nothing is written until the nurse chooses. | `writeback/service.py` |
+| The AI draft fails or times out | `available: false`, "AI draft unavailable", and the nurse writes as normal. Logged in `ai_logs`. | `ai_draft/client.py`, `ai_draft/service.py` |
+| AI text reaches a non-note field | The mapping refuses it (422) and nothing is sent. | `writeback/mapping.py` |
+| Consent missing or expired | Hard block in `policy.py` (403/409), with no override path for SMS. | `consent/policy.py` |
+| Too many sign-in attempts | 429 with Retry-After, per client address. | `api/ratelimit.py` |
+
+## Security and observability
+
+- **Auth:** demo-grade sign-in for seeded users only (local, test and demo environments). The HS256 JWT expiry is checked against the Clock. Sign-in is rate limited. Every endpoint checks the role, and member endpoints also check the assignment.
+- **CORS:** only the frontend origins in `CORS_ORIGINS`.
+- **Logs:** structured JSON, one line per request with the route template and member ID, never the raw path or query. A log-record factory masks phone numbers, emails, query values, and member and representative names in every log line, whatever logger it comes from. Uvicorn's access log is off.
+- **Metrics:** `/metrics` (Prometheus text) and `/admin/metrics` (JSON, supervisors; the Metrics page) report feed ages, signals per rule, the override rate, the AI unsupported-sentence rate and write-back lag. Counts only, no member data.
+- **Audit:** `audit_events` and `ai_logs` are append-only, enforced by database triggers.
 
 ## Testing
 
-- Backend tests don't need Postgres: they use the app factory with `TestClient` and SQLite for session/migration smoke tests.
-- Frontend tests stub `fetch`; e2e tests hit the real stack.
+- **Backend:** `make test` runs pytest on SQLite, with no Postgres needed. `make coverage` reports line coverage, 85% or more on signals, scoring, consent, writeback and identity. `tests/test_golden.py` asserts every blueprint number.
+- **Frontend:** vitest with a stubbed `fetch`.
+- **e2e:** `make e2e` runs Playwright against the demo build: Lighthouse on the Queue, 360 and Call pages, a keyboard-only Raymond call, the 15-minute demo script, and the workbench flows.
+- **Other targets:** `make perf` (5,000 members), `make audit` (pip-audit, npm audit), and the opt-in `pytest --live` (real Anthropic API).
 
-## Data pipeline
+## Component reference
+
+### Data pipeline (simulated HiLabs data layer)
 
 > **Scope.** Ingestion, normalisation, identity matching and conflict detection *simulate the HiLabs
 > data layer* (out of scope per the caselet) and live in `app/datalayer_mock/`. CaseCompass's own
@@ -52,9 +128,9 @@ app.synth -> data/raw -> app.datalayer_mock.ingest (landing, contracts, stg_*) -
   - **Current-state tables:** `contact_points`, `consents` and `documents` are rebuilt from Facts and HIE request staging.
   - **Contact confidence:** recency x source reliability x outcome. The factor tables in `app/facts/contacts.py` are calibrated to annex Sheet 8. Disconnected numbers are capped at 0.09, and third parties without authorisation are never callable.
   - **Conflicts:** a hospital medication list is compared with pharmacy fills around the document date (dose and presence). Diagnoses conflict only when sources use different codes in the same condition group. Only humans move a conflict to `sent_to_prescriber` or `resolved`.
-  - **Freshness:** from `event_date`. Green is under 7 days, amber 7 to 30, red over 30, and grey means never received.
+  - **Freshness** (display only, from `event_date`, by kind as in annex Sheet 9): screens are green under 6 months, amber 6 to 8, red from 9; open care gaps with a deadline ahead are green; services are green to 60 days, amber to 90; everything else is green under 7 days, amber 7 to 30, red over 30. Grey means never received.
   - **UNKNOWN:** `get_fact_or_unknown` returns an `Unknown` with a reason, e.g. "practice not connected" or "claims loaded through 2026-09-25".
-  - **Part 2:** records are masked in `member_snapshot`. An audited reveal is still to be built.
+  - **Part 2:** records are masked in `member_snapshot`; revealing needs a valid consent (`policy.can_reveal_part2`) and is audited.
 
 - **signals** (`evaluate_signals`):
   - **Rules:** 16 rule classes in `app/signals/rules.py`. Each has rule_id, version, owner, severity and description, and declares whether it is a lever and what kind of deadline it sets.
@@ -115,10 +191,3 @@ app.synth -> data/raw -> app.datalayer_mock.ingest (landing, contracts, stg_*) -
     - **AI time-out:** a model that raises a timeout.
   - **Audit:** every action is audited as `demo_*`.
   - **Manual discharge:** `POST /members/{id}/discharges` records a member-reported discharge while ADT is down (the "Add discharge" button). It also works outside demo mode.
-
-## Planned (not built yet)
-
-- Readmissions in the synthetic background (the back-test currently has none to measure).
-
-- CLI or API entry points for normalisation, matching and facts. For now they are library functions exercised by the tests.
-- Annual freshness thresholds for SDOH screens, if wanted: under the current bands, Raymond's 8-month HRA is red where annex Sheet 9 says amber.

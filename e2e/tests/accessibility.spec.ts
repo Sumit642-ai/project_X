@@ -9,7 +9,7 @@ const PORT = 9333;
 const BASE = "http://127.0.0.1:5174";
 
 // Lighthouse drives the same browser profile Playwright signed into, so the page has data.
-test("Lighthouse accessibility is 90+ on the queue and the member 360", async () => {
+test("Lighthouse accessibility is 90+ on the queue, the member 360 and the call page", async () => {
   const profile = mkdtempSync(join(tmpdir(), "cc-lh-"));
   const context = await chromium.launchPersistentContext(profile, {
     args: [`--remote-debugging-port=${PORT}`],
@@ -22,7 +22,7 @@ test("Lighthouse accessibility is 90+ on the queue and the member 360", async ()
     await page.waitForURL("**/queue");
 
     const scores: Record<string, number> = {};
-    for (const path of ["/queue", "/members/SYN-001"]) {
+    for (const path of ["/queue", "/members/SYN-001", "/members/SYN-001/call"]) {
       const result = await lighthouse(`${BASE}${path}`, {
         port: PORT,
         output: "json",

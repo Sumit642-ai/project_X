@@ -60,14 +60,23 @@ def copy_sqlite(source: Path, target: Path) -> None:
         src.backup(dst)
 
 
-def build(settings: Settings, *, log: Callable[[str], None] = print) -> dict[str, Any]:
+def build(
+    settings: Settings,
+    *,
+    log: Callable[[str], None] = print,
+    background_members: int = 0,
+    timings: dict[str, float] | None = None,
+) -> dict[str, Any]:
     clock = FixedClock(REFERENCE_INSTANT)
     started = time.perf_counter()
 
     def step(name: str, action: Callable[[], T]) -> T:
         began = time.perf_counter()
         result = action()
-        log(f"  {name:<24} {time.perf_counter() - began:5.1f} s")
+        elapsed = time.perf_counter() - began
+        if timings is not None:
+            timings[name] = elapsed
+        log(f"  {name:<24} {elapsed:5.1f} s")
         return result
 
     db_file = sqlite_path(settings.database_url)
@@ -76,7 +85,7 @@ def build(settings: Settings, *, log: Callable[[str], None] = print) -> dict[str
     db_file.parent.mkdir(parents=True, exist_ok=True)
 
     step("migrate", lambda: migrate(settings.database_url))
-    step("synth", lambda: generate(settings.raw_dir))
+    step("synth", lambda: generate(settings.raw_dir, background_members=background_members))
     engine: Engine = create_db_engine(settings.database_url)
     try:
         with create_session_factory(engine)() as session:

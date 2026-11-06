@@ -24,3 +24,7 @@ data/*
 
 # e2e run artefacts
 e2e/.data/
+
+# Coverage report (make coverage)
+coverage-report/
+backend/.coverage

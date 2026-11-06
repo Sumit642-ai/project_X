@@ -10,7 +10,7 @@ endif
 
 COMPOSE := docker compose
 
-.PHONY: help install up down logs test test-backend test-frontend lint seed migrate e2e synth ingest demo
+.PHONY: help install up down logs test test-backend test-frontend lint seed migrate e2e synth ingest demo coverage audit perf
 
 help:
 	@echo "make install  - create backend venv and install frontend/e2e deps"
@@ -24,6 +24,9 @@ help:
 	@echo "make synth    - regenerate synthetic raw feeds in data/raw (fixed seed)"
 	@echo "make ingest   - land, validate and stage everything in data/raw"
 	@echo "make demo     - rebuild the demo DB (SQLite, data/demo) and start API, mock CM, frontend"
+	@echo "make coverage - backend tests with line coverage (85%+ on signals, scoring, consent, writeback, identity)"
+	@echo "make audit    - dependency vulnerability scan (pip-audit, npm audit)"
+	@echo "make perf     - p95 of /queue and /360 with 5,000 background members, nightly pipeline time"
 
 .env:
 	cp .env.example .env
@@ -71,3 +74,16 @@ ingest:
 
 demo:
 	node scripts/demo.mjs
+
+COVERED := --cov=app/signals --cov=app/scoring --cov=app/consent --cov=app/writeback --cov=app/datalayer_mock/identity
+
+coverage:
+	cd backend && $(VENV_BIN)/python -m pytest $(COVERED) --cov-report=term-missing:skip-covered --cov-report=html:../coverage-report --cov-fail-under=85 -q
+
+audit:
+	cd backend && $(VENV_BIN)/python -m pip_audit --progress-spinner off --skip-editable
+	cd frontend && npm audit
+	cd e2e && npm audit
+
+perf:
+	cd backend && $(VENV_BIN)/python -m app.perf

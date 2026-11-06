@@ -3,16 +3,12 @@
 // it resets the demo first and last, so the other specs start from the pristine data.
 import { expect, test, type BrowserContext, type Page } from "@playwright/test";
 
-import { signIn } from "./helpers";
+import { resetDemo as resetDemoData, signIn } from "./helpers";
 
 test.describe.configure({ mode: "serial" });
 
 // Leave the pristine demo data for the other specs, even if the script fails part-way.
-test.afterEach(async ({ request }) => {
-  const login = await request.post("/api/auth/login", { data: { username: "janet" } });
-  const { access_token: token } = (await login.json()) as { access_token: string };
-  await request.post("/api/demo/clock/reset", { headers: { Authorization: `Bearer ${token}` } });
-});
+test.afterEach(async ({ request }) => resetDemoData(request));
 
 async function switchUser(page: Page, username: string): Promise<void> {
   await page.getByRole("button", { name: "Sign out" }).click();

@@ -1,0 +1,201 @@
+"""Spotting medication names in drafted text, so invented ones can be flagged.
+
+A name counts as a medication if it is in LEXICON (common generics and brands) or ends in a
+drug-class stem (furosemide, metoprolol, ...). The check is deliberately over-inclusive: a
+false flag costs the nurse a glance, a missed invented drug could reach the record.
+"""
+
+import re
+
+LEXICON = frozenset(
+    [
+        "acetaminophen",
+        "adderall",
+        "advair",
+        "albuterol",
+        "alprazolam",
+        "amiodarone",
+        "amlodipine",
+        "amoxicillin",
+        "apixaban",
+        "aripiprazole",
+        "aspirin",
+        "atenolol",
+        "atorvastatin",
+        "azithromycin",
+        "baclofen",
+        "benazepril",
+        "breo",
+        "budesonide",
+        "bumetanide",
+        "bumex",
+        "buprenorphine",
+        "bupropion",
+        "buspirone",
+        "captopril",
+        "carvedilol",
+        "cefalexin",
+        "cephalexin",
+        "cetirizine",
+        "ciprofloxacin",
+        "citalopram",
+        "clonazepam",
+        "clonidine",
+        "clopidogrel",
+        "coreg",
+        "cozaar",
+        "cyclobenzaprine",
+        "dapagliflozin",
+        "depakote",
+        "diazepam",
+        "digoxin",
+        "diltiazem",
+        "diphenhydramine",
+        "divalproex",
+        "donepezil",
+        "doxycycline",
+        "dulera",
+        "duloxetine",
+        "eliquis",
+        "empagliflozin",
+        "enalapril",
+        "entresto",
+        "escitalopram",
+        "eplerenone",
+        "farxiga",
+        "fentanyl",
+        "fluoxetine",
+        "fluticasone",
+        "formoterol",
+        "furosemide",
+        "gabapentin",
+        "glipizide",
+        "glyburide",
+        "haloperidol",
+        "heparin",
+        "hydralazine",
+        "hydrochlorothiazide",
+        "hydrocodone",
+        "hydroxyzine",
+        "ibuprofen",
+        "insulin",
+        "ipratropium",
+        "isosorbide",
+        "januvia",
+        "jardiance",
+        "keppra",
+        "lamictal",
+        "lamotrigine",
+        "lantus",
+        "lasix",
+        "levetiracetam",
+        "levofloxacin",
+        "levothyroxine",
+        "lexapro",
+        "lisinopril",
+        "lithium",
+        "loratadine",
+        "lorazepam",
+        "losartan",
+        "lyrica",
+        "meloxicam",
+        "metformin",
+        "methadone",
+        "methocarbamol",
+        "methylprednisolone",
+        "metolazone",
+        "metoprolol",
+        "mirtazapine",
+        "montelukast",
+        "morphine",
+        "naloxone",
+        "naltrexone",
+        "naproxen",
+        "narcan",
+        "nicotine",
+        "nitroglycerin",
+        "norco",
+        "olanzapine",
+        "omeprazole",
+        "ondansetron",
+        "oxycodone",
+        "pantoprazole",
+        "paroxetine",
+        "percocet",
+        "pravastatin",
+        "prednisone",
+        "pregabalin",
+        "proair",
+        "promethazine",
+        "propranolol",
+        "proventil",
+        "quetiapine",
+        "ramipril",
+        "risperidone",
+        "rivaroxaban",
+        "rosuvastatin",
+        "sacubitril",
+        "salmeterol",
+        "semaglutide",
+        "seroquel",
+        "sertraline",
+        "simvastatin",
+        "singulair",
+        "sitagliptin",
+        "spiriva",
+        "spironolactone",
+        "sublocade",
+        "suboxone",
+        "symbicort",
+        "synthroid",
+        "tamsulosin",
+        "tiotropium",
+        "topiramate",
+        "torsemide",
+        "tramadol",
+        "trazodone",
+        "trelegy",
+        "tylenol",
+        "valsartan",
+        "venlafaxine",
+        "ventolin",
+        "vivitrol",
+        "warfarin",
+        "xarelto",
+        "zoloft",
+        "zolpidem",
+        "zubsolv",
+    ]
+)
+
+STEMS = (
+    "pril", "olol", "sartan", "statin", "dipine", "semide", "thiazide", "zosin", "buterol",
+    "moterol", "meterol",
+    "sonide", "lukast", "tropium", "cillin", "mycin", "floxacin", "cycline", "prazole",
+    "tidine", "gliflozin", "gliptin", "glutide", "formin", "xaban", "parin", "azepam",
+    "oxetine", "faxine", "triptyline", "apine", "peridone", "trigine", "codone", "morphone",
+    "orphine", "navir", "vudine",
+)  # fmt: skip
+MIN_STEM_WORD = 7  # "alone", "phone" and other short words never match a stem
+
+WORD = re.compile(r"[a-z][a-z-]*[a-z]")
+
+
+def _words(text: str) -> set[str]:
+    return set(WORD.findall(text.lower()))
+
+
+def is_medication(word: str) -> bool:
+    return word in LEXICON or (len(word) >= MIN_STEM_WORD and word.endswith(STEMS))
+
+
+def medication_mentions(text: str) -> set[str]:
+    return {w for w in _words(text) if is_medication(w)}
+
+
+def known_terms(*texts: str) -> set[str]:
+    """Every word of the transcript and of the member's medication Facts."""
+    known: set[str] = set()
+    for text in texts:
+        known |= _words(text)
+    return known

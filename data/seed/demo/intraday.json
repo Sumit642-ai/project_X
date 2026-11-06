@@ -1,0 +1,64 @@
+{
+  "_comment": "Scripted intraday deliveries for demo mode. Advancing the demo clock past a step delivers its rows as a new snapshot file of that feed (synthetic snapshot + these rows), ingested by the data-layer mock at that instant.",
+  "steps": [
+    {
+      "id": "mon_1400",
+      "at": "2026-11-09T14:00:00-05:00",
+      "label": "Monday 14:00",
+      "story": "Larch Street Pharmacy fills Raymond's new furosemide 80 mg prescription.",
+      "deliveries": [
+        {
+          "feed": "pharmacy",
+          "rows": [
+            {
+              "rx_claim_id": "SYN-RX-INTRADAY-01",
+              "member_id": "SYN-001",
+              "fill_date": "2026-11-09",
+              "ndc": "99001-0003-30",
+              "drug_name": "Furosemide",
+              "strength": "80 mg",
+              "sig": "1 tablet daily",
+              "quantity": "30",
+              "days_supply": "30",
+              "claim_status": "paid",
+              "reject_code": "",
+              "reject_reason": "",
+              "prescriber": "Dr K. Osei (St Brigid Regional)",
+              "pharmacy_name": "Larch Street Pharmacy",
+              "pharmacy_phone_on_profile": "555-0142",
+              "profile_phone_as_of": "2026-11-09",
+              "patient_pay": "0.00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tue_1100",
+      "at": "2026-11-10T11:00:00-05:00",
+      "label": "Tuesday 11:00",
+      "story": "Utilisation management approves the expedited sacubitril/valsartan coverage request.",
+      "deliveries": [
+        {
+          "feed": "um",
+          "rows": [
+            {
+              "auth_id": "SYN-AUTH-INTRADAY-01",
+              "member_id": "SYN-001",
+              "request_type": "prior_auth",
+              "item": "Sacubitril/valsartan 24/26 mg",
+              "item_code": "99002-0001-30",
+              "requested_date": "2026-11-09",
+              "status": "approved",
+              "decision_due": "2026-11-10",
+              "decision_date": "2026-11-10",
+              "expedited": "Y",
+              "missing_documents": "",
+              "requested_by": "Dr K. Osei"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

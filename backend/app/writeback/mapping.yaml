@@ -1,0 +1,64 @@
+# CaseCompass encounter -> mock CM platform record. Declarative; every entry is round-trip
+# tested (tests/writeback/test_mapping.py). Types: str (default), bool, date, datetime, json.
+# `ai: allowed` marks the only field AI-drafted text may be written to: the free-text note body.
+# Medication, allergy, dose and every other assessment field must never carry it.
+version: 1
+
+note:
+  - {ours: notes, theirs: body, ai: allowed}
+  - {ours: outcome, theirs: call_outcome}
+  - {ours: number_used, theirs: number_called}
+  - {ours: channel, theirs: channel}
+  - {ours: started_at, theirs: call_started, type: datetime}
+  - {ours: ended_at, theirs: call_ended, type: datetime}
+  - {ours: cm_id, theirs: author}
+  - {ours: transcription_consent, theirs: transcription_consent, type: bool}
+  - {ours: identity_verified, theirs: identity_verified, type: bool}
+
+assessment:
+  - {ours: full_name, theirs: DEM_NAME}
+  - {ours: date_of_birth, theirs: DEM_DOB}
+  - {ours: preferred_language, theirs: DEM_LANG, type: json}
+  - {ours: best_phone, theirs: DEM_PHONE, type: json}
+  - {ours: home_address, theirs: DEM_ADDR}
+  - {ours: best_time, theirs: DEM_BEST_TIME}
+  - {ours: representative, theirs: DEM_REP, type: json}
+  - {ours: pcp, theirs: DEM_PCP}
+  - {ours: last_admission, theirs: EVT_ADMIT, type: json}
+  - {ours: last_discharge, theirs: EVT_DISCHARGE, type: json}
+  - {ours: discharge_summary, theirs: EVT_DC_SUMMARY, type: json}
+  - {ours: last_pcp_visit, theirs: EVT_PCP_VISIT}
+  - {ours: loop_diuretic, theirs: MED_LOOP_DIURETIC, type: json}
+  - {ours: hf_therapy, theirs: MED_HF_THERAPY, type: json}
+  - {ours: beta_blocker, theirs: MED_BETA_BLOCKER, type: json}
+  - {ours: discharge_med_list, theirs: MED_DC_LIST, type: json}
+  - {ours: supply_on_hand, theirs: MED_SUPPLY, type: json}
+  - {ours: pharmacy, theirs: MED_PHARMACY}
+  - {ours: primary_condition, theirs: CON_PRIMARY}
+  - {ours: other_conditions, theirs: CON_OTHER, type: json}
+  - {ours: key_lab, theirs: CON_KEY_LAB, type: json}
+  - {ours: open_care_gaps, theirs: CON_CARE_GAPS, type: json}
+  - {ours: living_situation, theirs: SOC_LIVING}
+  - {ours: primary_caregiver, theirs: SOC_CAREGIVER, type: json}
+  - {ours: adl_independence, theirs: SOC_ADL}
+  - {ours: medication_management, theirs: SOC_MED_MGMT}
+  - {ours: transportation, theirs: SOC_TRANSPORT, type: json}
+  - {ours: housing_stability, theirs: SOC_HOUSING}
+  - {ours: food_security, theirs: SOC_FOOD}
+  - {ours: caregiver_strain, theirs: SOC_CG_STRAIN}
+  - {ours: allergies, theirs: LIVE_ALLERGIES}
+  - {ours: symptoms_today, theirs: LIVE_SYMPTOMS}
+  - {ours: weight_today, theirs: LIVE_WEIGHT}
+  - {ours: doses_taken, theirs: LIVE_DOSES_TAKEN}
+  - {ours: falls, theirs: LIVE_FALLS}
+  - {ours: follow_up_booked, theirs: LIVE_FOLLOW_UP}
+  - {ours: ride_needed, theirs: LIVE_RIDE}
+  - {ours: teach_back, theirs: LIVE_TEACH_BACK}
+  - {ours: member_goal, theirs: LIVE_GOAL}
+  - {ours: other_concerns, theirs: LIVE_OTHER}
+
+task:
+  - {ours: kind, theirs: type}
+  - {ours: title, theirs: description}
+  - {ours: due_date, theirs: due, type: date}
+  - {ours: signal_rule_id, theirs: reason_code}

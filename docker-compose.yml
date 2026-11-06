@@ -1,0 +1,61 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  backend:
+    build: ./backend
+    env_file: .env
+    environment:
+      # Inside the compose network the database host is "db", not localhost.
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      SEED_DIR: /data/seed
+      MOCK_CM_URL: http://mock_cm:8200
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ./data/seed:/data/seed:ro
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  mock_cm:
+    build: ./backend
+    command: ["uvicorn", "mock_cm.app:create_app", "--factory", "--host", "0.0.0.0", "--port", "8200"]
+    environment:
+      MOCK_CM_DATABASE_URL: sqlite:////tmp/mock_cm.db
+    ports:
+      - "${MOCK_CM_PORT:-8200}:8200"
+
+  writeback_worker:
+    build: ./backend
+    command: ["python", "-m", "app.writeback.worker"]
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      MOCK_CM_URL: http://mock_cm:8200
+    depends_on:
+      backend:
+        condition: service_healthy
+      mock_cm:
+        condition: service_started
+
+volumes:
+  pgdata:

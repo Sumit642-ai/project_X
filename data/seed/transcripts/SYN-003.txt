@@ -1,0 +1,21 @@
+1. NURSE: Hi, this is Devon, a nurse with your health plan. Is this Darnell Pruitt?
+2. MEMBER: Yeah, that's me. How'd you get this number? I changed phones.
+3. NURSE: Your pharmacy had it on file. Can you confirm your date of birth before we go on?
+4. MEMBER: (gives date of birth; it matches the record)
+5. NURSE: Thanks. I saw you were in the emergency room on Saturday for your breathing. How are you doing now?
+6. MEMBER: Better than Saturday. Still tight in the chest at night.
+7. NURSE: Do you have your rescue inhaler with you?
+8. MEMBER: No, I ran out of the rescue one. It's been empty since around September.
+9. NURSE: So you have no rescue inhaler right now. What about your everyday inhaler, the controller?
+10. MEMBER: The everyday one I have. I picked it up last month and I use it morning and night.
+11. MEMBER: My cousin gave me one of his puffers to hold me over, the pro-something. ProAir or Proventil, one of those. I don't know if it's the same thing.
+12. NURSE: Okay, I'll note that. Have you used it?
+13. MEMBER: Twice yesterday.
+14. NURSE: The ER wants you to see your doctor within a week. Do you have a way to get to that appointment?
+15. MEMBER: No, I don't have a ride. The van went to my old address twice and I missed it, so I gave up.
+16. NURSE: I'm sorry that happened. What's your address now so we can fix it?
+17. MEMBER: (gives current address)
+18. NURSE: Thanks. I'll update the ride service and work on getting the follow-up booked this week.
+19. MEMBER: Evenings after six are best. I work days.
+20. NURSE: Got it. If your breathing gets worse tonight, call 911 or go to the ER.
+21. MEMBER: Okay. Thanks.

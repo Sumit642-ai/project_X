@@ -1,0 +1,40 @@
+ndc,ingredient,strength,drug_class,product_name
+99001-0001-30,furosemide,20 mg,loop diuretic,Furosemide
+99001-0002-30,furosemide,40 mg,loop diuretic,Furosemide
+99001-0003-30,furosemide,80 mg,loop diuretic,Furosemide
+99002-0001-30,sacubitril / valsartan,24/26 mg,ARNI,Sacubitril/valsartan
+99003-0001-30,metoprolol succinate,25 mg,beta blocker,Metoprolol succinate
+99003-0002-30,metoprolol succinate,50 mg,beta blocker,Metoprolol succinate
+99004-0001-30,metformin,500 mg,biguanide,Metformin
+99004-0002-30,metformin,1000 mg,biguanide,Metformin
+99005-0001-30,glipizide,5 mg,sulfonylurea,Glipizide
+99006-0001-30,semaglutide,0.25 mg,GLP-1 receptor agonist,Semaglutide
+99007-0001-30,dulaglutide,0.75 mg,GLP-1 receptor agonist,Dulaglutide
+99008-0001-30,budesonide / formoterol,160/4.5 mcg,ICS/LABA,Budesonide/formoterol inhaler
+99009-0001-30,albuterol,90 mcg,SABA,Albuterol rescue inhaler
+99010-0001-30,buprenorphine / naloxone,8/2 mg,opioid partial agonist (MOUD),Buprenorphine/naloxone
+99011-0001-30,lamotrigine,100 mg,anticonvulsant mood stabiliser,Lamotrigine
+99012-0001-30,donepezil,10 mg,cholinesterase inhibitor,Donepezil
+99013-0001-30,amlodipine,5 mg,calcium channel blocker,Amlodipine
+99013-0002-30,amlodipine,10 mg,calcium channel blocker,Amlodipine
+99014-0001-30,lisinopril,10 mg,ACE inhibitor,Lisinopril
+99014-0002-30,lisinopril,20 mg,ACE inhibitor,Lisinopril
+99015-0001-30,atorvastatin,20 mg,statin,Atorvastatin
+99015-0002-30,atorvastatin,40 mg,statin,Atorvastatin
+99016-0001-30,carvedilol,12.5 mg,beta blocker,Carvedilol
+99016-0002-30,carvedilol,25 mg,beta blocker,Carvedilol
+99017-0001-30,sertraline,50 mg,SSRI,Sertraline
+99017-0002-30,sertraline,100 mg,SSRI,Sertraline
+99018-0001-30,levothyroxine,50 mcg,thyroid hormone,Levothyroxine
+99018-0002-30,levothyroxine,75 mcg,thyroid hormone,Levothyroxine
+99019-0001-30,apixaban,5 mg,DOAC,Apixaban
+99020-0001-30,tiotropium,18 mcg,LAMA,Tiotropium inhaler
+99021-0001-30,fluticasone / salmeterol,250/50 mcg,ICS/LABA,Fluticasone/salmeterol inhaler
+99022-0001-30,gabapentin,300 mg,gabapentinoid,Gabapentin
+99023-0001-30,insulin glargine,100 units/mL,basal insulin,Insulin glargine
+99024-0001-30,empagliflozin,10 mg,SGLT2 inhibitor,Empagliflozin
+99025-0001-30,omeprazole,20 mg,PPI,Omeprazole
+99026-0001-30,dapagliflozin,10 mg,SGLT2 inhibitor,Dapagliflozin
+99027-0001-30,olmesartan,20 mg,ARB,Olmesartan
+99028-0001-30,esomeprazole,40 mg,PPI,Esomeprazole
+99029-0001-30,insulin degludec,100 units/mL,basal insulin,Insulin degludec

@@ -1,0 +1,16 @@
+{
+  "_comment": "Simulated dialer. No real calls. Outcome per number, optionally by weekday (Clock time).",
+  "default": "no_answer",
+  "numbers": {
+    "555-0142": {"default": "connected"},
+    "555-0143": {"default": "connected"},
+    "555-0177": {"default": "no_answer"},
+    "555-0110": {"default": "disconnected"},
+    "555-0133": {"default": "disconnected"},
+    "555-0188": {"Mon": "no_answer", "Tue": "connected", "default": "no_answer"},
+    "555-0121": {"default": "voicemail"},
+    "555-0155": {"default": "voicemail"},
+    "555-0160": {"default": "connected"},
+    "555-0161": {"default": "wrong_person"}
+  }
+}

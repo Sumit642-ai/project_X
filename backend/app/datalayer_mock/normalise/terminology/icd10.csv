@@ -1,0 +1,23 @@
+code,display,condition_group
+E03.9,"Hypothyroidism, unspecified",hypothyroidism
+E11.65,Type 2 diabetes mellitus with hyperglycemia,diabetes
+E11.9,Type 2 diabetes mellitus without complications,diabetes
+E78.5,"Hyperlipidemia, unspecified",hyperlipidemia
+F03.B0,"Unspecified dementia, moderate, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",dementia
+F11.20,"Opioid dependence, uncomplicated",OUD
+F31.81,Bipolar II disorder,bipolar
+F32.9,"Major depressive disorder, single episode, unspecified",depression
+G62.9,"Polyneuropathy, unspecified",neuropathy
+G89.29,Other chronic pain,chronic pain
+I10,Essential (primary) hypertension,hypertension
+I48.91,Unspecified atrial fibrillation,atrial fibrillation
+I50.22,Chronic systolic (congestive) heart failure,HF
+J44.9,"Chronic obstructive pulmonary disease, unspecified",COPD
+J45.40,"Moderate persistent asthma, uncomplicated",asthma
+J45.41,Moderate persistent asthma with (acute) exacerbation,asthma
+J45.51,Severe persistent asthma with (acute) exacerbation,asthma
+K21.9,Gastro-esophageal reflux disease without esophagitis,GERD
+N18.30,"Chronic kidney disease, stage 3 unspecified",CKD
+N18.31,"Chronic kidney disease, stage 3a",CKD
+N18.4,Chronic kidney disease (severe) stage 4,CKD
+W19,Unspecified fall (external cause; 7th character not supplied),fall

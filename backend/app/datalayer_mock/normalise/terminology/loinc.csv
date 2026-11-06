@@ -1,0 +1,4 @@
+loinc,concept,display,unit
+33762-6,nt_probnp,Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma,pg/mL
+4548-4,hba1c,Hemoglobin A1c/Hemoglobin.total in Blood,%
+33914-3,egfr,Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD),mL/min/1.73m2

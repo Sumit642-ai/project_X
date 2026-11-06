@@ -1,0 +1,12 @@
+# Runtime dependencies for the Vercel Python function (synthetic demo; SQLite, no Postgres).
+# Keep in step with [project.dependencies] in pyproject.toml.
+fastapi>=0.115
+sqlalchemy>=2.0.36
+alembic>=1.14
+pydantic-settings>=2.6
+tzdata>=2024.2
+hl7>=0.4.5
+pyjwt>=2.9
+pyyaml>=6
+anthropic>=2.6
+httpx2>=2.16

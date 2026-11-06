@@ -16,7 +16,7 @@ from sqlalchemy.orm import Session
 
 from app.consent import policy
 from app.core.clock import PLAN_TZ, Clock
-from app.core.config import REPO_ROOT
+from app.core.config import get_settings
 from app.datalayer_mock.identity.models import NEEDS_REVIEW, Member, MemberLink
 from app.encounters.models import Encounter, EncounterField, Notification, SignalHandle, Task
 from app.encounters.template import evaluate_template
@@ -44,7 +44,7 @@ WEEKDAYS = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
 
 def dial_script(path: Path | None = None) -> dict[str, Any]:
     # The script is committed seed data (data/seed), independent of DATA_DIR.
-    path = path or REPO_ROOT / "data" / "seed" / "dial_script.json"
+    path = path or get_settings().seed_dir / "dial_script.json"
     data: dict[str, Any] = json.loads(path.read_text(encoding="utf-8"))
     return data
 

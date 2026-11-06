@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <id root="2.16.840.1.113883.19.5" extension="SYN-DOC-0015"/>
+  <code code="18842-5" codeSystem="2.16.840.1.113883.6.1" displayName="Discharge Summary"/>
+  <title>Discharge Summary</title>
+  <effectiveTime value="20260727110000-0400"/>
+  <recordTarget>
+    <patientRole>
+      <id extension="SYN-032-H"/>
+      <patient>
+        <name><given>Amina</given><family>Adhikari</family></name>
+        <administrativeGenderCode code="F"/>
+        <birthTime value="19470110"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <assignedAuthor>
+      <representedOrganization><name>Cardinal Valley Hospital</name></representedOrganization>
+    </assignedAuthor>
+  </author>
+  <componentOf>
+    <encompassingEncounter>
+      <effectiveTime>
+        <low value="20260724151500-0400"/>
+        <high value="20260727110000-0400"/>
+      </effectiveTime>
+      <dischargeDispositionCode code="01" displayName="Home or self care"/>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Problems</title>
+          <entry><observation><code code="E78.5" codeSystem="2.16.840.1.113883.6.90"/><text>Hyperlipidemia</text></observation></entry>
+          <entry><observation><code code="I10" codeSystem="2.16.840.1.113883.6.90"/><text>Essential hypertension</text></observation></entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="10183-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Medications</title>
+          <entry><substanceAdministration><consumable><manufacturedProduct><manufacturedMaterial><name>Atorvastatin</name></manufacturedMaterial></manufacturedProduct></consumable><doseQuantity value="20 mg"/><text>Atorvastatin 20 mg 1 tablet daily</text></substanceAdministration></entry>
+          <entry><substanceAdministration><consumable><manufacturedProduct><manufacturedMaterial><name>Amlodipine</name></manufacturedMaterial></manufacturedProduct></consumable><doseQuantity value="5 mg"/><text>Amlodipine 5 mg 1 tablet daily</text></substanceAdministration></entry>
+          <entry><substanceAdministration><consumable><manufacturedProduct><manufacturedMaterial><name>Insulin glargine</name></manufacturedMaterial></manufacturedProduct></consumable><doseQuantity value="100 units/mL"/><text>Insulin glargine 100 units/mL 20 units at bedtime</text></substanceAdministration></entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Plan of Treatment</title>
+          <entry><act><text>PCP follow-up within 7 days</text></act></entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

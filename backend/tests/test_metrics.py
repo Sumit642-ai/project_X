@@ -9,14 +9,16 @@ from tests.writeback.test_writeback import ready_to_save
 def test_prometheus_metrics_cover_feeds_signals_overrides_ai_and_writeback(api: Api) -> None:
     text = api.client.get("/metrics").text
 
-    assert re.search(r'casecompass_feed_age_hours\{feed="pharmacy",stream="pharmacy_ncpdp"\} \d', text)
+    assert re.search(
+        r'casecompass_feed_age_hours\{feed="pharmacy",stream="pharmacy_ncpdp"\} \d', text
+    )
     assert 'casecompass_feed_stale{feed="claims",stream="claims_837"} 1' in text
     assert re.search(r'casecompass_signals\{rule="NO_CRITICAL_MED_ON_HAND"\} [1-9]', text)
     assert 'casecompass_overrides{action="override_not_now"} 0' in text
     assert "casecompass_writeback_pending 0" in text
     # No calls and no drafts yet: those rates are unknown, so they are left out, not 0.
-    assert "casecompass_override_rate " not in text
-    assert "casecompass_ai_unsupported_sentence_rate " not in text
+    assert not re.search(r"(?m)^casecompass_override_rate ", text)
+    assert not re.search(r"(?m)^casecompass_ai_unsupported_sentence_rate ", text)
 
 
 def test_metrics_never_contain_member_data(api: Api) -> None:

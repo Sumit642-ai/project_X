@@ -1,4 +1,5 @@
 {
   "/queue": 100,
-  "/members/SYN-001": 100
+  "/members/SYN-001": 100,
+  "/members/SYN-001/call": 100
 }

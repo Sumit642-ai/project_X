@@ -30,3 +30,21 @@ def test_get_clock_follows_clock_mode(monkeypatch: pytest.MonkeyPatch) -> None:
 
     monkeypatch.setattr(clock_module, "get_settings", lambda: Settings(clock_mode="system"))
     assert abs(get_clock().now() - SystemClock().now()) < timedelta(minutes=1)
+
+
+def test_business_logic_never_reads_the_wall_clock() -> None:
+    """CLAUDE.md: the Clock is injected. Ruff (TID251) enforces this at lint time; this test
+    enforces it in `make test` too. Only app/core/clock.py may read the wall clock."""
+    import re
+    from pathlib import Path
+
+    wall = re.compile(r"\b(datetime\.(now|utcnow|today)|date\.today)\(|\btime\.time\(\)")
+    app_dir = Path(__file__).resolve().parents[1] / "app"
+    offenders = [
+        f"{path.relative_to(app_dir)}:{number}"
+        for path in app_dir.rglob("*.py")
+        if path.name != "clock.py"
+        for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1)
+        if wall.search(line)
+    ]
+    assert offenders == []

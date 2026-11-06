@@ -1,0 +1,35 @@
+result_id,member_id,loinc,test_name,result_value,unit,collected_date,source
+SYN-LAB-000001,SYN-001,33762-6,NT-proBNP,4850,pg/mL,2026-11-04,St Brigid Regional (HIE)
+SYN-LAB-000002,SYN-002,4548-4,Hemoglobin A1c,7.6,%,2026-03-10,Evergreen Lab Network
+SYN-LAB-000003,SYN-002,4548-4,Hemoglobin A1c,8.9,%,2026-10-02,Evergreen Lab Network
+SYN-LAB-000004,SYN-005,33914-3,eGFR,22,mL/min/1.73m2,2026-09-20,Evergreen Lab Network
+SYN-LAB-000005,SYN-006,4548-4,Hemoglobin A1c,6.5,%,2026-03-10,Evergreen Lab Network
+SYN-LAB-000006,SYN-007,4548-4,Hemoglobin A1c,6.3,%,2026-09-07,Evergreen Lab Network
+SYN-LAB-000007,SYN-007,4548-4,Hemoglobin A1c,8.1,%,2026-04-26,Evergreen Lab Network
+SYN-LAB-000008,SYN-009,4548-4,Hemoglobin A1c,9.6,%,2026-02-27,Evergreen Lab Network
+SYN-LAB-000009,SYN-009,4548-4,Hemoglobin A1c,6.9,%,2026-03-10,Evergreen Lab Network
+SYN-LAB-000010,SYN-011,33762-6,NT-proBNP,2605,pg/mL,2026-06-11,Evergreen Lab Network
+SYN-LAB-000011,SYN-014,4548-4,Hemoglobin A1c,8.8,%,2026-10-02,Evergreen Lab Network
+SYN-LAB-000012,SYN-014,4548-4,Hemoglobin A1c,8.5,%,2026-02-11,Evergreen Lab Network
+SYN-LAB-000013,SYN-016,33762-6,NT-proBNP,1847,pg/mL,2026-02-09,Evergreen Lab Network
+SYN-LAB-000014,SYN-017,4548-4,Hemoglobin A1c,7.6,%,2026-04-28,Evergreen Lab Network
+SYN-LAB-000015,SYN-024,4548-4,Hemoglobin A1c,7.5,%,2026-07-01,Evergreen Lab Network
+SYN-LAB-000016,SYN-024,4548-4,Hemoglobin A1c,9.4,%,2026-04-25,Evergreen Lab Network
+SYN-LAB-000017,SYN-030,33914-3,eGFR,40,mL/min/1.73m2,2026-05-08,Evergreen Lab Network
+SYN-LAB-000018,SYN-030,33762-6,NT-proBNP,999,pg/mL,2026-04-16,Evergreen Lab Network
+SYN-LAB-000019,SYN-032,4548-4,Hemoglobin A1c,9.4,%,2026-08-19,Evergreen Lab Network
+SYN-LAB-000020,SYN-034,4548-4,Hemoglobin A1c,7.3,%,2026-09-14,Evergreen Lab Network
+SYN-LAB-000021,SYN-034,4548-4,Hemoglobin A1c,8.9,%,2026-02-14,Evergreen Lab Network
+SYN-LAB-000022,SYN-035,4548-4,Hemoglobin A1c,7.6,%,2026-10-09,Evergreen Lab Network
+SYN-LAB-000023,SYN-037,33762-6,NT-proBNP,1825,pg/mL,2026-08-25,Evergreen Lab Network
+SYN-LAB-000024,SYN-038,33914-3,eGFR,46,mL/min/1.73m2,2026-02-24,Evergreen Lab Network
+SYN-LAB-000025,SYN-038,33762-6,NT-proBNP,3394,pg/mL,2026-05-11,Evergreen Lab Network
+SYN-LAB-000026,SYN-038,33762-6,NT-proBNP,3811,pg/mL,2026-02-19,Evergreen Lab Network
+SYN-LAB-000027,SYN-040,33762-6,NT-proBNP,2399,pg/mL,2026-04-21,Evergreen Lab Network
+SYN-LAB-000028,SYN-040,33762-6,NT-proBNP,3696,pg/mL,2026-07-14,Evergreen Lab Network
+SYN-LAB-000029,SYN-042,33762-6,NT-proBNP,2506,pg/mL,2026-05-22,Evergreen Lab Network
+SYN-LAB-000030,SYN-042,33762-6,NT-proBNP,4985,pg/mL,2026-02-25,Evergreen Lab Network
+SYN-LAB-000031,SYN-049,4548-4,Hemoglobin A1c,6.8,%,2026-04-13,Evergreen Lab Network
+SYN-LAB-000032,SYN-049,4548-4,Hemoglobin A1c,9,%,2026-04-20,Evergreen Lab Network
+SYN-LAB-000033,SYN-050,33762-6,NT-proBNP,4851,pg/mL,2026-04-30,Evergreen Lab Network
+SYN-LAB-000034,SYN-050,4548-4,Hemoglobin A1c,6.9,%,2026-07-04,Evergreen Lab Network

@@ -1,0 +1,1550 @@
+{
+  "header": {
+    "capacity": null,
+    "data_as_of": "2026-11-09T13:00:00Z",
+    "now": "2026-11-09T08:00:00-05:00",
+    "scored_on": "2026-11-09",
+    "stale_feeds": [
+      {
+        "feed": "claims",
+        "reason": "data as of 2026-09-25 (45 days)",
+        "stream": "claims_837"
+      },
+      {
+        "feed": "medicaid",
+        "reason": "data as of 2026-10-08 (32 days)",
+        "stream": "ltss_aide_hours"
+      }
+    ],
+    "tier_counts": {
+      "T0": 3,
+      "T1": 7,
+      "T2": 40
+    }
+  },
+  "rows": [
+    {
+      "age": 76,
+      "assigned_cm": "maria",
+      "due_at": "2026-11-10T22:00:00Z",
+      "due_tz": "America/New_York",
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          88
+        ]
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-001",
+      "name": "Raymond Tull",
+      "next_best_action": {
+        "reason": "Furosemide ran out 2026-10-30; no fill since discharge",
+        "rule_id": "NO_CRITICAL_MED_ON_HAND",
+        "text": "Confirm diuretic supply and current dose with member and prescriber today."
+      },
+      "rank": 1,
+      "score": "93.4",
+      "score_inputs": {
+        "a": "0.820",
+        "m": "1.000",
+        "r": "0.880",
+        "u": "1.0000"
+      },
+      "tier": "T0",
+      "why": [
+        "Furosemide ran out 2026-10-30; no fill since discharge",
+        "Sacubitril/valsartan rejected (PA required); no coverage request filed",
+        "Furosemide refill expected 2026-10-30; none since"
+      ]
+    },
+    {
+      "age": 34,
+      "assigned_cm": "alma",
+      "due_at": "2026-11-12T22:00:00Z",
+      "due_tz": "America/New_York",
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          5
+        ]
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-004",
+      "name": "Kayla Morrison",
+      "next_best_action": {
+        "reason": "Psychiatric discharge 2026-11-05; no successful contact since",
+        "rule_id": "PSYCH_DISCHARGE_NO_CONTACT",
+        "text": "Reach the member today through an authorised contact; confirm follow-up."
+      },
+      "rank": 2,
+      "score": "87.1",
+      "score_inputs": {
+        "a": "0.750",
+        "m": "1.000",
+        "r": "0.740",
+        "u": "1.0000"
+      },
+      "tier": "T0",
+      "why": [
+        "Psychiatric discharge 2026-11-05; no successful contact since",
+        "Behavioral health follow-up due by 2026-11-12",
+        "Number 555-0133 disconnected"
+      ]
+    },
+    {
+      "age": 37,
+      "assigned_cm": "alma",
+      "due_at": "2026-11-09T22:00:00Z",
+      "due_tz": "America/New_York",
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          55
+        ]
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-041",
+      "name": "Beatriz Fairbanks",
+      "next_best_action": {
+        "reason": "Physical therapy, 12 visits authorisation overdue since 2026-11-04",
+        "rule_id": "DME_AUTH_OVERDUE",
+        "text": "Escalate to UM; missing: Prescriber attestation."
+      },
+      "rank": 3,
+      "score": "62.1",
+      "score_inputs": {
+        "a": "0.630",
+        "m": "0.000",
+        "r": "0.700",
+        "u": "0.9250"
+      },
+      "tier": "T0",
+      "why": [
+        "Physical therapy, 12 visits authorisation overdue since 2026-11-04",
+        "Number 555-0147 disconnected; newer 555-0124 available",
+        "HRA 222 days old"
+      ]
+    },
+    {
+      "age": 54,
+      "assigned_cm": "devon",
+      "due_at": "2026-11-13T22:00:00Z",
+      "due_tz": "America/New_York",
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DUAL",
+      "member_id": "SYN-003",
+      "name": "Darnell Pruitt",
+      "next_best_action": {
+        "reason": "Albuterol rescue inhaler refill expected 2026-09-14; none since",
+        "rule_id": "EXPECTED_REFILL_MISSING",
+        "text": "Ask if the member still takes it and has supply; check for barriers."
+      },
+      "rank": 4,
+      "score": "73.6",
+      "score_inputs": {
+        "a": "0.720",
+        "m": "1.000",
+        "r": "0.710",
+        "u": "0.6000"
+      },
+      "tier": "T1",
+      "why": [
+        "Albuterol rescue inhaler refill expected 2026-09-14; none since",
+        "ED visit 2026-11-06; no rescue inhaler since 2026-09-14",
+        "4 ED visits in 90 days; 2 only in ADT"
+      ]
+    },
+    {
+      "age": 84,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DSNP",
+      "member_id": "SYN-005",
+      "name": "Rose-Marie Joseph",
+      "next_best_action": {
+        "reason": "Aide hours cut 20 to 12 (-40%); appeal by 2026-11-30",
+        "rule_id": "LTSS_HOURS_CUT",
+        "text": "Discuss the reduction with member and caregiver; offer appeal support."
+      },
+      "rank": 5,
+      "score": "68.7",
+      "score_inputs": {
+        "a": "0.810",
+        "m": "0.750",
+        "r": "0.690",
+        "u": "0.6000"
+      },
+      "tier": "T1",
+      "why": [
+        "Aide hours cut 20 to 12 (-40%); appeal by 2026-11-30",
+        "Caregiver strain high: 14 of 16",
+        "Hospital bed (DME) authorisation overdue since 2026-11-05"
+      ]
+    },
+    {
+      "age": 24,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          53
+        ]
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-017",
+      "name": "Lorraine Lasko",
+      "next_best_action": {
+        "reason": "MRI lumbar spine authorisation overdue since 2026-10-17",
+        "rule_id": "DME_AUTH_OVERDUE",
+        "text": "Escalate to UM; missing: Face-to-face encounter note."
+      },
+      "rank": 6,
+      "score": "67.8",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "0.750",
+        "r": "0.760",
+        "u": "0.6000"
+      },
+      "tier": "T1",
+      "why": [
+        "MRI lumbar spine authorisation overdue since 2026-10-17",
+        "Insulin degludec rejected as non-formulary; never filled"
+      ]
+    },
+    {
+      "age": 90,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          67
+        ]
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-044",
+      "name": "Emeka Quillen",
+      "next_best_action": {
+        "reason": "Caregiver strain high: 10 of 16",
+        "rule_id": "CAREGIVER_STRAIN",
+        "text": "Ask the caregiver about respite, aide hours and support services."
+      },
+      "rank": 7,
+      "score": "55.6",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "1.000",
+        "r": "0.330",
+        "u": "0.6000"
+      },
+      "tier": "T1",
+      "why": [
+        "Caregiver strain high: 10 of 16"
+      ]
+    },
+    {
+      "age": 83,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-011",
+      "name": "Abdi Hollis",
+      "next_best_action": {
+        "reason": "CPAP device authorisation overdue since 2026-10-28",
+        "rule_id": "DME_AUTH_OVERDUE",
+        "text": "Escalate to UM; missing: Face-to-face encounter note."
+      },
+      "rank": 8,
+      "score": "52.3",
+      "score_inputs": {
+        "a": "0.350",
+        "m": "0.000",
+        "r": "0.770",
+        "u": "0.6000"
+      },
+      "tier": "T1",
+      "why": [
+        "CPAP device authorisation overdue since 2026-10-28"
+      ]
+    },
+    {
+      "age": 76,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DSNP",
+      "member_id": "SYN-045",
+      "name": "Priya Tobias",
+      "next_best_action": {
+        "reason": "MRI lumbar spine authorisation overdue since 2026-11-04",
+        "rule_id": "DME_AUTH_OVERDUE",
+        "text": "Escalate to UM; missing: Face-to-face encounter note."
+      },
+      "rank": 9,
+      "score": "44.7",
+      "score_inputs": {
+        "a": "0.830",
+        "m": "0.000",
+        "r": "0.460",
+        "u": "0.6000"
+      },
+      "tier": "T1",
+      "why": [
+        "MRI lumbar spine authorisation overdue since 2026-11-04",
+        "3 English calls to a Arabic speaker"
+      ]
+    },
+    {
+      "age": 83,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          77
+        ]
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-016",
+      "name": "Yosef Delacroix",
+      "next_best_action": {
+        "reason": "MRI lumbar spine authorisation overdue since 2026-10-24",
+        "rule_id": "DME_AUTH_OVERDUE",
+        "text": "Escalate to UM; missing: Prescriber attestation."
+      },
+      "rank": 10,
+      "score": "34.5",
+      "score_inputs": {
+        "a": "0.810",
+        "m": "0.000",
+        "r": "0.210",
+        "u": "0.6000"
+      },
+      "tier": "T1",
+      "why": [
+        "MRI lumbar spine authorisation overdue since 2026-10-24",
+        "Caregiver screen 228 days old"
+      ]
+    },
+    {
+      "age": 86,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-014",
+      "name": "Yosef Yarborough",
+      "next_best_action": {
+        "reason": "Esomeprazole rejected as non-formulary; never filled",
+        "rule_id": "NONFORMULARY_NEVER_FILLED",
+        "text": "Ask the prescriber about the formulary alternative or an exception."
+      },
+      "rank": 11,
+      "score": "58.7",
+      "score_inputs": {
+        "a": "0.350",
+        "m": "0.750",
+        "r": "0.780",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Esomeprazole rejected as non-formulary; never filled"
+      ]
+    },
+    {
+      "age": 41,
+      "assigned_cm": "devon",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DUAL",
+      "member_id": "SYN-019",
+      "name": "Ernesto Juarez",
+      "next_best_action": {
+        "reason": "Esomeprazole rejected as non-formulary; never filled",
+        "rule_id": "NONFORMULARY_NEVER_FILLED",
+        "text": "Ask the prescriber about the formulary alternative or an exception."
+      },
+      "rank": 12,
+      "score": "57.8",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "1.000",
+        "r": "0.610",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Esomeprazole rejected as non-formulary; never filled",
+        "HRA 186 days old"
+      ]
+    },
+    {
+      "age": 43,
+      "assigned_cm": "devon",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-018",
+      "name": "Bernard Merriweather",
+      "next_best_action": {
+        "reason": "Caregiver screen 244 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 13,
+      "score": "49.5",
+      "score_inputs": {
+        "a": "0.650",
+        "m": "0.000",
+        "r": "0.850",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Caregiver screen 244 days old"
+      ]
+    },
+    {
+      "age": 69,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-030",
+      "name": "Quinn Barlowe",
+      "next_best_action": {
+        "reason": "4 English calls to a Somali speaker",
+        "rule_id": "LANGUAGE_MISMATCH_OUTREACH",
+        "text": "Route to a Somali-speaking case manager or use an interpreter."
+      },
+      "rank": 14,
+      "score": "46.7",
+      "score_inputs": {
+        "a": "0.570",
+        "m": "0.000",
+        "r": "0.800",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "4 English calls to a Somali speaker"
+      ]
+    },
+    {
+      "age": 46,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DUAL",
+      "member_id": "SYN-048",
+      "name": "Oscar Kettering",
+      "next_best_action": {
+        "reason": "Caregiver screen 234 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 15,
+      "score": "46.7",
+      "score_inputs": {
+        "a": "0.410",
+        "m": "0.000",
+        "r": "0.840",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Caregiver screen 234 days old"
+      ]
+    },
+    {
+      "age": 68,
+      "assigned_cm": null,
+      "due_at": "2026-12-31T22:00:00Z",
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-002",
+      "name": "Anh Pham",
+      "next_best_action": {
+        "reason": "Metformin refill expected 2026-10-31; none since",
+        "rule_id": "EXPECTED_REFILL_MISSING",
+        "text": "Ask if the member still takes it and has supply; check for barriers."
+      },
+      "rank": 16,
+      "score": "46.3",
+      "score_inputs": {
+        "a": "0.590",
+        "m": "0.750",
+        "r": "0.410",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Metformin refill expected 2026-10-31; none since",
+        "Semaglutide rejected as non-formulary; never filled",
+        "4 English calls to a Vietnamese speaker"
+      ]
+    },
+    {
+      "age": 89,
+      "assigned_cm": "devon",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-046",
+      "name": "Colette Stoltz",
+      "next_best_action": {
+        "reason": "Caregiver screen 252 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 17,
+      "score": "44.2",
+      "score_inputs": {
+        "a": "0.480",
+        "m": "0.000",
+        "r": "0.760",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Caregiver screen 252 days old",
+        "Housing screen 373 days old"
+      ]
+    },
+    {
+      "age": 88,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-022",
+      "name": "Odette Mbeki",
+      "next_best_action": {
+        "reason": "2 Vietnamese calls to a English speaker",
+        "rule_id": "LANGUAGE_MISMATCH_OUTREACH",
+        "text": "Route to a English-speaking case manager or use an interpreter."
+      },
+      "rank": 18,
+      "score": "43.3",
+      "score_inputs": {
+        "a": "0.590",
+        "m": "0.000",
+        "r": "0.710",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "2 Vietnamese calls to a English speaker",
+        "HRA 227 days old"
+      ]
+    },
+    {
+      "age": 19,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-036",
+      "name": "Zelda Tremblay",
+      "next_best_action": {
+        "reason": "Housing screen 329 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 19,
+      "score": "43.1",
+      "score_inputs": {
+        "a": "0.570",
+        "m": "0.000",
+        "r": "0.710",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Housing screen 329 days old"
+      ]
+    },
+    {
+      "age": 37,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-031",
+      "name": "Priya Stoltz",
+      "next_best_action": {
+        "reason": "Dapagliflozin rejected as non-formulary; never filled",
+        "rule_id": "NONFORMULARY_NEVER_FILLED",
+        "text": "Ask the prescriber about the formulary alternative or an exception."
+      },
+      "rank": 20,
+      "score": "42.8",
+      "score_inputs": {
+        "a": "0.480",
+        "m": "0.750",
+        "r": "0.350",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Dapagliflozin rejected as non-formulary; never filled",
+        "HRA 264 days old"
+      ]
+    },
+    {
+      "age": 90,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-050",
+      "name": "Wanda Quillen",
+      "next_best_action": {
+        "reason": "Esomeprazole rejected as non-formulary; never filled",
+        "rule_id": "NONFORMULARY_NEVER_FILLED",
+        "text": "Ask the prescriber about the formulary alternative or an exception."
+      },
+      "rank": 21,
+      "score": "42.7",
+      "score_inputs": {
+        "a": "0.630",
+        "m": "0.750",
+        "r": "0.310",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Esomeprazole rejected as non-formulary; never filled",
+        "Number 555-0170 disconnected; newer 555-0120 available"
+      ]
+    },
+    {
+      "age": 30,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DUAL",
+      "member_id": "SYN-010",
+      "name": "Joyce Whitcombe",
+      "next_best_action": {
+        "reason": "HRA 225 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 22,
+      "score": "42.1",
+      "score_inputs": {
+        "a": "0.350",
+        "m": "0.000",
+        "r": "0.740",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 225 days old"
+      ]
+    },
+    {
+      "age": 60,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DUAL",
+      "member_id": "SYN-042",
+      "name": "Dmitri Osterman",
+      "next_best_action": {
+        "reason": "Number 555-0116 disconnected; newer 555-0179 available",
+        "rule_id": "CONTACT_DISCONNECTED",
+        "text": "Use the next number on the ladder; update the contact record."
+      },
+      "rank": 23,
+      "score": "40.6",
+      "score_inputs": {
+        "a": "0.720",
+        "m": "0.000",
+        "r": "0.610",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Number 555-0116 disconnected; newer 555-0179 available"
+      ]
+    },
+    {
+      "age": 72,
+      "assigned_cm": "devon",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-027",
+      "name": "Alicia Zielinski",
+      "next_best_action": {
+        "reason": "HRA 336 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 24,
+      "score": "39.8",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "0.000",
+        "r": "0.660",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 336 days old",
+        "Housing screen 386 days old"
+      ]
+    },
+    {
+      "age": 57,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          80
+        ]
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-009",
+      "name": "Marcus Castellanos",
+      "next_best_action": {
+        "reason": "HRA 210 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 25,
+      "score": "38.5",
+      "score_inputs": {
+        "a": "0.590",
+        "m": "0.000",
+        "r": "0.590",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 210 days old"
+      ]
+    },
+    {
+      "age": 38,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-029",
+      "name": "Bishnu Dunmore",
+      "next_best_action": {
+        "reason": "Housing screen 368 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 26,
+      "score": "38.5",
+      "score_inputs": {
+        "a": "0.590",
+        "m": "0.000",
+        "r": "0.590",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Housing screen 368 days old"
+      ]
+    },
+    {
+      "age": 43,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DUAL",
+      "member_id": "SYN-008",
+      "name": "Quinn Kowalczyk",
+      "next_best_action": {
+        "reason": "HRA 189 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 27,
+      "score": "37.9",
+      "score_inputs": {
+        "a": "0.570",
+        "m": "0.000",
+        "r": "0.580",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 189 days old",
+        "Housing screen 206 days old"
+      ]
+    },
+    {
+      "age": 77,
+      "assigned_cm": "devon",
+      "due_at": "2026-11-14T22:00:00Z",
+      "due_tz": "America/New_York",
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-038",
+      "name": "Priya Hollis",
+      "next_best_action": {
+        "reason": "ED follow-up visit due by 2026-11-14",
+        "rule_id": "FMC_DUE",
+        "text": "Book a primary-care or specialist visit within 7 days of the ED visit."
+      },
+      "rank": 28,
+      "score": "36.6",
+      "score_inputs": {
+        "a": "0.480",
+        "m": "0.000",
+        "r": "0.570",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "ED follow-up visit due by 2026-11-14",
+        "HRA 257 days old"
+      ]
+    },
+    {
+      "age": 79,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          73
+        ]
+      },
+      "lob": "DSNP",
+      "member_id": "SYN-032",
+      "name": "Amina Adhikari",
+      "next_best_action": {
+        "reason": "HRA 182 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 29,
+      "score": "36.2",
+      "score_inputs": {
+        "a": "0.480",
+        "m": "0.000",
+        "r": "0.560",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 182 days old",
+        "Housing screen 345 days old"
+      ]
+    },
+    {
+      "age": 78,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          52
+        ]
+      },
+      "lob": "DSNP",
+      "member_id": "SYN-012",
+      "name": "Amina Lindgren",
+      "next_best_action": {
+        "reason": "HRA 258 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 30,
+      "score": "35.8",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "0.000",
+        "r": "0.560",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 258 days old"
+      ]
+    },
+    {
+      "age": 32,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-043",
+      "name": "Joyce Barlowe",
+      "next_best_action": {
+        "reason": "HRA 336 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 31,
+      "score": "35.3",
+      "score_inputs": {
+        "a": "0.350",
+        "m": "0.000",
+        "r": "0.570",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 336 days old"
+      ]
+    },
+    {
+      "age": 85,
+      "assigned_cm": "devon",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          58
+        ]
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-037",
+      "name": "Gloria Abernathy",
+      "next_best_action": null,
+      "rank": 32,
+      "score": "35.2",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "0.000",
+        "r": "0.770",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 86,
+      "assigned_cm": "devon",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DSNP",
+      "member_id": "SYN-021",
+      "name": "Ulrich Corrigan",
+      "next_best_action": {
+        "reason": "HRA 213 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 33,
+      "score": "34.9",
+      "score_inputs": {
+        "a": "0.670",
+        "m": "0.000",
+        "r": "0.480",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 213 days old"
+      ]
+    },
+    {
+      "age": 72,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DSNP",
+      "member_id": "SYN-013",
+      "name": "Hana Lindgren",
+      "next_best_action": null,
+      "rank": 34,
+      "score": "34.1",
+      "score_inputs": {
+        "a": "0.810",
+        "m": "0.000",
+        "r": "0.650",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 73,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-007",
+      "name": "Marisol Fairbanks",
+      "next_best_action": {
+        "reason": "HRA 188 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 35,
+      "score": "31.9",
+      "score_inputs": {
+        "a": "0.650",
+        "m": "0.000",
+        "r": "0.410",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 188 days old"
+      ]
+    },
+    {
+      "age": 71,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-015",
+      "name": "Keiko Zielinski",
+      "next_best_action": null,
+      "rank": 36,
+      "score": "31.6",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "0.000",
+        "r": "0.680",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 39,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DUAL",
+      "member_id": "SYN-034",
+      "name": "Elena Ravensworth",
+      "next_best_action": null,
+      "rank": 37,
+      "score": "30.1",
+      "score_inputs": {
+        "a": "0.410",
+        "m": "0.000",
+        "r": "0.650",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 32,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-025",
+      "name": "Nadia Osterman",
+      "next_best_action": null,
+      "rank": 38,
+      "score": "29.3",
+      "score_inputs": {
+        "a": "0.650",
+        "m": "0.000",
+        "r": "0.570",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 66,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-023",
+      "name": "Joyce Rasmussen",
+      "next_best_action": null,
+      "rank": 39,
+      "score": "27.6",
+      "score_inputs": {
+        "a": "0.480",
+        "m": "0.000",
+        "r": "0.570",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 30,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-033",
+      "name": "Samuel Mbeki",
+      "next_best_action": null,
+      "rank": 40,
+      "score": "26.8",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "0.000",
+        "r": "0.560",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 61,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-020",
+      "name": "Abdi Jablonski",
+      "next_best_action": {
+        "reason": "4 English calls to a Somali speaker",
+        "rule_id": "LANGUAGE_MISMATCH_OUTREACH",
+        "text": "Route to a Somali-speaking case manager or use an interpreter."
+      },
+      "rank": 41,
+      "score": "26.6",
+      "score_inputs": {
+        "a": "0.440",
+        "m": "0.000",
+        "r": "0.330",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "4 English calls to a Somali speaker",
+        "HRA 249 days old"
+      ]
+    },
+    {
+      "age": 39,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-035",
+      "name": "Nadia Falkner",
+      "next_best_action": {
+        "reason": "Number 555-0130 disconnected; newer 555-0132 available",
+        "rule_id": "CONTACT_DISCONNECTED",
+        "text": "Use the next number on the ladder; update the contact record."
+      },
+      "rank": 42,
+      "score": "26.2",
+      "score_inputs": {
+        "a": "0.720",
+        "m": "0.000",
+        "r": "0.250",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "Number 555-0130 disconnected; newer 555-0132 available",
+        "Housing screen 190 days old"
+      ]
+    },
+    {
+      "age": 74,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-006",
+      "name": "Zelda Osterman",
+      "next_best_action": {
+        "reason": "HRA 339 days old",
+        "rule_id": "STALE_SDOH",
+        "text": "Re-screen on the next call."
+      },
+      "rank": 43,
+      "score": "25.4",
+      "score_inputs": {
+        "a": "0.480",
+        "m": "0.000",
+        "r": "0.290",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "HRA 339 days old"
+      ]
+    },
+    {
+      "age": 66,
+      "assigned_cm": "devon",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-028",
+      "name": "Desmond Adhikari",
+      "next_best_action": null,
+      "rank": 44,
+      "score": "24.0",
+      "score_inputs": {
+        "a": "0.480",
+        "m": "0.000",
+        "r": "0.480",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 30,
+      "assigned_cm": "devon",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-047",
+      "name": "Oscar Lasko",
+      "next_best_action": null,
+      "rank": 45,
+      "score": "23.7",
+      "score_inputs": {
+        "a": "0.650",
+        "m": "0.000",
+        "r": "0.430",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 75,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-040",
+      "name": "Hassan Kettering",
+      "next_best_action": {
+        "reason": "4 English calls to a Somali speaker",
+        "rule_id": "LANGUAGE_MISMATCH_OUTREACH",
+        "text": "Route to a Somali-speaking case manager or use an interpreter."
+      },
+      "rank": 46,
+      "score": "20.5",
+      "score_inputs": {
+        "a": "0.630",
+        "m": "0.000",
+        "r": "0.130",
+        "u": "0.3000"
+      },
+      "tier": "T2",
+      "why": [
+        "4 English calls to a Somali speaker",
+        "HRA 196 days old"
+      ]
+    },
+    {
+      "age": 35,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "DUAL",
+      "member_id": "SYN-026",
+      "name": "Deja Fairbanks",
+      "next_best_action": null,
+      "rank": 47,
+      "score": "18.7",
+      "score_inputs": {
+        "a": "0.350",
+        "m": "0.000",
+        "r": "0.380",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 48,
+      "assigned_cm": "maria",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          54
+        ]
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-039",
+      "name": "Quinn Okonjo",
+      "next_best_action": null,
+      "rank": 48,
+      "score": "18.7",
+      "score_inputs": {
+        "a": "0.350",
+        "m": "0.000",
+        "r": "0.380",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 83,
+      "assigned_cm": null,
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": true,
+        "label": "flagged by data layer",
+        "link_ids": [
+          56
+        ]
+      },
+      "lob": "MA-PPO",
+      "member_id": "SYN-049",
+      "name": "Yusra Zielinski",
+      "next_best_action": null,
+      "rank": 49,
+      "score": "14.8",
+      "score_inputs": {
+        "a": "0.480",
+        "m": "0.000",
+        "r": "0.250",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    },
+    {
+      "age": 45,
+      "assigned_cm": "alma",
+      "due_at": null,
+      "due_tz": null,
+      "duplicate": {
+        "flagged": false,
+        "label": null,
+        "link_ids": []
+      },
+      "lob": "MEDICAID",
+      "member_id": "SYN-024",
+      "name": "Cedric Vasquez-Lindo",
+      "next_best_action": null,
+      "rank": 50,
+      "score": "12.7",
+      "score_inputs": {
+        "a": "0.350",
+        "m": "0.000",
+        "r": "0.230",
+        "u": "0.0000"
+      },
+      "tier": "T2",
+      "why": []
+    }
+  ]
+}

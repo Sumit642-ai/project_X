@@ -66,6 +66,8 @@ known-third-party = ["alembic"]
 [tool.ruff.lint.per-file-ignores]
 # The only place allowed to read the wall clock.
 "app/core/clock.py" = ["TID251"]
+# Tests import shared fixtures (e.g. `api`) and take them as parameters of the same name.
+"tests/**" = ["F811"]
 # The mock CM platform simulates an external system with its own wall clock.
 "mock_cm/app.py" = ["TID251", "DTZ005"]
 

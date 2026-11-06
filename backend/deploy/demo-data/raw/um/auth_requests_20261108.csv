@@ -1,0 +1,15 @@
+auth_id,member_id,request_type,item,item_code,requested_date,status,decision_due,decision_date,expedited,missing_documents,requested_by
+SYN-AUTH-000001,SYN-005,prior_auth,Hospital bed (DME),E0250,2026-10-29,pending,2026-11-05,,N,Face-to-face encounter note,Dr M. Celestin
+SYN-AUTH-000002,SYN-009,prior_auth,"Physical therapy, 12 visits",97110,2026-07-28,approved,2026-08-11,2026-08-03,N,,Dr S. Brennan
+SYN-AUTH-000003,SYN-012,prior_auth,MRI lumbar spine,72148,2026-10-28,pending,2026-11-11,,N,,Dr P. Kowalski
+SYN-AUTH-000004,SYN-015,prior_auth,Hospital bed (DME),E0250,2026-11-01,pending,2026-11-15,,N,,Dr J. Esposito
+SYN-AUTH-000005,SYN-019,prior_auth,"Physical therapy, 12 visits",97110,2026-08-27,approved,2026-09-10,2026-09-04,N,,Riverside FQHC
+SYN-AUTH-000006,SYN-024,prior_auth,Home oxygen,E1390,2026-10-08,approved,2026-10-22,2026-10-11,N,,Dr R. Okafor
+SYN-AUTH-000007,SYN-034,prior_auth,CPAP device,E0601,2026-09-14,approved,2026-09-28,2026-09-16,N,,
+SYN-AUTH-000008,SYN-035,prior_auth,MRI lumbar spine,72148,2026-08-20,approved,2026-09-03,2026-08-29,N,,Dr R. Okafor
+SYN-AUTH-000009,SYN-037,prior_auth,CPAP device,E0601,2026-11-04,pending,2026-11-18,,N,,Dr P. Kowalski
+SYN-AUTH-000010,SYN-011,prior_auth,CPAP device,E0601,2026-10-17,pending,2026-10-28,,N,Face-to-face encounter note,Northfield Family Health
+SYN-AUTH-000011,SYN-016,prior_auth,MRI lumbar spine,72148,2026-10-13,pending,2026-10-24,,N,Prescriber attestation,Northfield Family Health
+SYN-AUTH-000012,SYN-017,prior_auth,MRI lumbar spine,72148,2026-10-10,pending,2026-10-17,,N,Face-to-face encounter note,Dr L. Haddad
+SYN-AUTH-000013,SYN-041,prior_auth,"Physical therapy, 12 visits",97110,2026-10-25,pending,2026-11-04,,N,Prescriber attestation,Riverside FQHC
+SYN-AUTH-000014,SYN-045,prior_auth,MRI lumbar spine,72148,2026-10-23,pending,2026-11-04,,N,Face-to-face encounter note,

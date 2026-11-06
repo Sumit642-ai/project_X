@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <id root="2.16.840.1.113883.19.5" extension="SYN-DOC-0005"/>
+  <code code="18842-5" codeSystem="2.16.840.1.113883.6.1" displayName="Discharge Summary"/>
+  <title>Discharge Summary</title>
+  <effectiveTime value="20260608132000-0400"/>
+  <recordTarget>
+    <patientRole>
+      <id extension="SYN-037-H"/>
+      <patient>
+        <name><given>Gloria</given><family>Abernathy</family></name>
+        <administrativeGenderCode code="F"/>
+        <birthTime value="19410124"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <assignedAuthor>
+      <representedOrganization><name>St Brigid Regional</name></representedOrganization>
+    </assignedAuthor>
+  </author>
+  <componentOf>
+    <encompassingEncounter>
+      <effectiveTime>
+        <low value="20260606094500-0400"/>
+        <high value="20260608132000-0400"/>
+      </effectiveTime>
+      <dischargeDispositionCode code="01" displayName="Home or self care"/>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Problems</title>
+          <entry><observation><code code="K21.9" codeSystem="2.16.840.1.113883.6.90"/><text>GERD</text></observation></entry>
+          <entry><observation><code code="I50.22" codeSystem="2.16.840.1.113883.6.90"/><text>Chronic systolic heart failure</text></observation></entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="10183-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Medications</title>
+          <entry><substanceAdministration><consumable><manufacturedProduct><manufacturedMaterial><name>Omeprazole</name></manufacturedMaterial></manufacturedProduct></consumable><doseQuantity value="20 mg"/><text>Omeprazole 20 mg 1 capsule daily</text></substanceAdministration></entry>
+          <entry><substanceAdministration><consumable><manufacturedProduct><manufacturedMaterial><name>Carvedilol</name></manufacturedMaterial></manufacturedProduct></consumable><doseQuantity value="25 mg"/><text>Carvedilol 25 mg 1 tablet twice daily</text></substanceAdministration></entry>
+          <entry><substanceAdministration><consumable><manufacturedProduct><manufacturedMaterial><name>Atorvastatin</name></manufacturedMaterial></manufacturedProduct></consumable><doseQuantity value="20 mg"/><text>Atorvastatin 20 mg 1 tablet daily</text></substanceAdministration></entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Plan of Treatment</title>
+          <entry><act><text>PCP follow-up within 7 days</text></act></entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

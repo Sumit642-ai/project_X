@@ -1,0 +1,15 @@
+gap_id,member_id,measure,description,anchor_date,due_date,status,value
+SYN-GAP-000001,SYN-001,TRC,Transition contact after inpatient discharge,2026-11-07,2026-11-10,open,
+SYN-GAP-000002,SYN-002,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,open,0.76
+SYN-GAP-000003,SYN-003,FMC,7-day follow-up after ED visit,2026-11-06,2026-11-13,open,
+SYN-GAP-000004,SYN-004,FUH,7-day follow-up after psychiatric discharge,2026-11-05,2026-11-12,open,
+SYN-GAP-000005,SYN-041,TRC,Transition contact after inpatient discharge,2026-11-05,2026-11-09,open,
+SYN-GAP-000006,SYN-038,FMC,7-day follow-up after ED visit,2026-11-07,2026-11-14,open,
+SYN-GAP-000007,SYN-006,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,met,0.82
+SYN-GAP-000008,SYN-009,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,met,0.97
+SYN-GAP-000009,SYN-014,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,met,0.86
+SYN-GAP-000010,SYN-017,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,met,0.88
+SYN-GAP-000011,SYN-024,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,met,0.88
+SYN-GAP-000012,SYN-032,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,met,0.95
+SYN-GAP-000013,SYN-035,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,met,0.91
+SYN-GAP-000014,SYN-050,PDC,"Diabetes medication adherence (PDC), year to date",2026-01-01,2026-12-31,met,0.88

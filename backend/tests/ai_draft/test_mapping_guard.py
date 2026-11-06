@@ -113,3 +113,34 @@ def test_drafted_text_in_the_free_text_note_saves(api: Api, configure: Configure
     assert api.client.post(f"/encounters/{eid}/save", headers=maria).json()["status"] == "synced"
     (entry,) = api.cm.get("/admin/entries?member_id=SYN-001").json()
     assert entry["note"]["body"] == note
+
+
+def test_the_ai_draft_cannot_reach_doses_coverage_merges_or_consent() -> None:
+    """CLAUDE.md: AI may only draft text. The ai_draft package imports nothing that changes
+    identity links, conflicts, consents or write-back; it may only *read* the consent policy
+    (transcription consent, Part 2 masking)."""
+    import ast
+    from pathlib import Path
+
+    forbidden = (
+        "app.datalayer_mock.identity",
+        "app.facts.conflicts",
+        "app.workbench.actions",
+        "app.writeback",
+    )
+    package = Path(__file__).resolve().parents[2] / "app" / "ai_draft"
+    policy_calls: set[str] = set()
+    for path in package.glob("*.py"):
+        tree = ast.parse(path.read_text(encoding="utf-8"))
+        for node in ast.walk(tree):
+            if isinstance(node, ast.ImportFrom) and node.module:
+                names = {alias.name for alias in node.names}
+                if node.module.startswith(forbidden) and names != {"ActionError"}:
+                    raise AssertionError(f"{path.name} imports {names} from {node.module}")
+            if (
+                isinstance(node, ast.Attribute)
+                and isinstance(node.value, ast.Name)
+                and node.value.id == "policy"
+            ):
+                policy_calls.add(node.attr)
+    assert policy_calls <= {"can_transcribe", "is_masked"}, policy_calls

@@ -1,0 +1,15 @@
+# Upload only what the build and the function need.
+**/.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+data/demo
+data/perf
+data/raw
+data/landing
+e2e
+coverage-report
+backend/.coverage
+backend/tests

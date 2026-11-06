@@ -29,7 +29,9 @@ def age_days(fact: Fact, clock: Clock) -> int | None:
 def _open_gap_ahead(fact: Any, today: date) -> bool:
     value = getattr(fact, "value", None) or {}
     due = value.get("due_date")
-    return value.get("status") == "open" and bool(due) and date.fromisoformat(due[:10]) >= today
+    if value.get("status") != "open" or not isinstance(due, str) or not due:
+        return False
+    return date.fromisoformat(due[:10]) >= today
 
 
 def freshness(fact: Fact | Unknown | None, clock: Clock) -> Freshness:

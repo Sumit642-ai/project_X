@@ -19,7 +19,10 @@ FRONTEND = "http://localhost:5173"
 
 
 def test_cors_allows_only_the_frontend_origin(api: Api) -> None:
-    preflight = {"Access-Control-Request-Method": "GET", "Access-Control-Request-Headers": "authorization"}
+    preflight = {
+        "Access-Control-Request-Method": "GET",
+        "Access-Control-Request-Headers": "authorization",
+    }
     ok = api.client.options("/queue", headers={"Origin": FRONTEND, **preflight})
     assert ok.headers.get("access-control-allow-origin") == FRONTEND
     evil = api.client.options("/queue", headers={"Origin": "https://evil.example", **preflight})
@@ -65,13 +68,16 @@ SECRET_PATTERNS = {
     "private key": re.compile(r"-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----"),
     "GitHub token": re.compile(r"gh[pousr]_[A-Za-z0-9]{36}"),
     "Slack token": re.compile(r"xox[baprs]-[A-Za-z0-9-]{10,}"),
-    "password assignment": re.compile(r"(?i)\b(password|passwd|secret)\s*[:=]\s*['\"][^'\"\s]{12,}['\"]"),
+    "password assignment": re.compile(
+        r"(?i)\b(password|passwd|secret)\s*[:=]\s*['\"][^'\"\s]{12,}['\"]"
+    ),
 }
 SKIP_DIRS = {".venv", "node_modules", ".git", "__pycache__", ".mypy_cache", ".ruff_cache",
              ".pytest_cache", "dist", "test-results", "playwright-report", ".data", "landing",
-             "screenshots", "demo"}  # fmt: skip
+             "screenshots", "demo", "deploy"}  # fmt: skip
 TEXT_SUFFIXES = {".py", ".ts", ".tsx", ".js", ".mjs", ".json", ".yaml", ".yml", ".toml",
-                 ".md", ".txt", ".csv", ".hl7", ".xml", ".ini", ".cfg", ".example", ".html"}  # fmt: skip
+                 ".md", ".txt", ".csv", ".hl7", ".xml", ".ini", ".cfg", ".example",
+                 ".html"}  # fmt: skip
 
 
 def _repo_files() -> list[Path]:
@@ -136,7 +142,9 @@ def test_log_lines_never_contain_names_or_phone_numbers(
     logging.getLogger("casecompass.test").warning(
         "Joan called back about Raymond on 555-0143 (joan@example.com)"
     )
-    logging.getLogger("casecompass.test").info("x", extra={"phone": "555-0142", "full_name": "Kayla Morrison"})
+    logging.getLogger("casecompass.test").info(
+        "x", extra={"phone": "555-0142", "full_name": "Kayla Morrison"}
+    )
 
     lines = [JsonFormatter().format(r) for r in caplog.records]
     assert any('"route": "/members/search"' in line for line in lines)  # requests are logged
@@ -152,5 +160,7 @@ def test_request_logs_are_structured_json(api: Api, caplog: pytest.LogCaptureFix
     api.client.get("/health")
     record = next(r for r in caplog.records if r.name == "casecompass.request")
     entry = json.loads(JsonFormatter().format(record))
-    assert {"ts", "level", "logger", "msg", "method", "route", "status", "duration_ms"} <= set(entry)
+    assert {"ts", "level", "logger", "msg", "method", "route", "status", "duration_ms"} <= set(
+        entry
+    )
     assert (entry["route"], entry["status"]) == ("/health", 200)

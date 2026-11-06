@@ -1,0 +1,57 @@
+member_id,last_name,first_name,dob,sex,plan,lob,state,language,pcp,phone,phone_type,phone_as_of,address_line1,city,zip,address_as_of,effective_date,term_date,rep_name,rep_relationship,rep_form_expires,medicaid_redetermination_due
+SYN-001,Tull,Raymond,1950-04-12,M,Evergreen,MA-PPO,OH,en,Dr A. Lindqvist,555-0177,landline,2023-02-01,12 Larch St,Columbus,43204,2023-02-01,2019-01-01,,Joan Tull,wife,2027-05-31,
+SYN-002,Pham,Anh,1958-01-30,F,Evergreen,MA-PPO,OH,vi,Dr T. Nguyen,555-0121,,2025-06-01,88 Pine Ave,Columbus,43229,2025-06-01,2023-01-01,,,,,
+SYN-003,Pruitt,Darnell,1972-02-03,M,Evergreen,DUAL,OH,en,,555-0110,,,401 Elm Ct Apt 3,Dayton,45405,2024-01-01,2021-07-01,,,,,
+SYN-004,Morrison,Kayla,1992-06-18,F,Evergreen,MEDICAID,OH,en,Riverside FQHC,555-0133,,,9 Birch Rd,Columbus,43223,2025-12-01,2024-04-01,,,,,
+SYN-004-M,Delaney,Kayla,1992-06-18,F,Evergreen,MEDICAID,OH,en,,555-0134,,,70 Oak St,Columbus,43207,,2022-02-01,2023-06-30,,,,
+SYN-005,Joseph,Rose-Marie,1942-08-25,F,Evergreen,DSNP,OH,ht,Dr M. Celestin,555-0155,,2026-03-01,3 Cedar Ln,Columbus,43211,2026-03-01,2024-01-01,,Mirlande Joseph,daughter,2026-09-30,2026-12-31
+SYN-006,Osterman,Zelda,1952-09-07,F,Evergreen,MA-PPO,OH,en,Dr P. Kowalski,555-0136,,2025-02-03,87 Hickory Rd,Akron,44305,2024-05-20,2022-09-01,,,,,
+SYN-007,Fairbanks,Marisol,1953-01-14,F,Evergreen,MA-PPO,OH,es,Dr P. Kowalski,555-0174,,2026-03-17,445 Magnolia Rd,Toledo,43605,2023-10-14,2022-02-01,,,,,
+SYN-008,Kowalczyk,Quinn,1983-04-16,F,Evergreen,DUAL,OH,en,Dr L. Haddad,555-0152,,,968 Hickory St,Dayton,45410,2022-09-18,2020-10-01,,,,,2027-09-23
+SYN-009,Castellanos,Marcus,1969-04-12,M,Evergreen,MEDICAID,OH,en,Dr S. Brennan,555-0104,,2024-12-03,831 Aspen Ave,Dayton,45410,2024-01-23,2026-04-01,,,,,2027-05-25
+SYN-010,Whitcombe,Joyce,1996-08-17,F,Evergreen,DUAL,OH,en,,555-0137,,2023-08-16,497 Buckeye Ave,Columbus,43223,2022-10-09,2019-12-01,,,,,2027-01-16
+SYN-011,Hollis,Abdi,1943-05-13,M,Evergreen,MA-PPO,OH,es,Northfield Family Health,555-0154,,2024-03-20,502 Magnolia St,Dayton,45410,2024-03-23,2022-07-01,,,,,
+SYN-012,Lindgren,Amina,1948-10-03,F,Evergreen,DSNP,OH,en,Dr P. Kowalski,555-0114,,2023-11-08,340 Sycamore Rd,Akron,44305,2026-07-07,2025-05-01,,,,,2027-05-10
+SYN-013,Lindgren,Hana,1954-06-05,F,Evergreen,DSNP,OH,es,,555-0159,,2026-04-25,36 Sycamore Ln,Akron,44305,2025-01-10,2021-08-01,,,,,2026-12-07
+SYN-014,Yarborough,Yosef,1940-03-02,M,Evergreen,MA-PPO,OH,en,Dr P. Kowalski,555-0167,,2024-04-20,603 Aspen Rd,Dayton,45410,2025-11-22,2022-12-01,,,,,
+SYN-015,Zielinski,Keiko,1955-04-25,F,Evergreen,MA-PPO,OH,so,Dr J. Esposito,555-0178,,2023-04-19,879 Juniper Ave,Springfield,45505,2025-11-14,2023-11-01,,,,,
+SYN-016,Delacroix,Yosef,1943-05-01,M,Evergreen,MA-PPO,OH,vi,Northfield Family Health,555-0156,,2025-12-24,58 Hickory Ct,Toledo,43605,2024-03-20,2025-10-01,,Marisol Delacroix,niece,2028-11-21,
+SYN-017,Lasko,Lorraine,2002-02-20,F,Evergreen,MEDICAID,OH,en,Dr L. Haddad,555-0175,,2023-05-18,500 Hawthorn Ln,Columbus,43223,2022-02-26,2019-02-01,,,,,2027-05-13
+SYN-018,Merriweather,Bernard,1983-04-05,M,Evergreen,MEDICAID,OH,,Riverside FQHC,555-0119,,2026-03-29,525 Juniper St,Dayton,45405,2023-05-15,2026-01-01,,Wanda Merriweather,spouse,2026-10-17,2027-07-19
+SYN-019,Juarez,Ernesto,1985-10-07,M,Evergreen,DUAL,OH,ne,Riverside FQHC,555-0194,,2024-04-27,832 Chestnut Ln,Columbus,43211,2022-12-25,2020-12-01,,,,,2027-06-27
+SYN-020,Jablonski,Abdi,1965-07-18,M,Evergreen,MEDICAID,OH,so,Dr P. Kowalski,555-0102,,2024-02-18,887 Magnolia Rd,Columbus,43223,2026-05-07,2021-06-01,,,,,2027-07-07
+SYN-021,Corrigan,Ulrich,1940-02-13,M,Evergreen,DSNP,OH,en,,555-0198,,2026-08-23,610 Oak Ct,Columbus,43211,2026-06-30,2024-10-01,,,,,2027-03-19
+SYN-022,Mbeki,Odette,1938-01-04,F,Evergreen,MA-PPO,OH,vi,Riverside FQHC,555-0195,,2025-08-26,842 Aspen St,Dayton,45410,2024-02-06,2018-01-01,,Dolores Mbeki,niece,2027-04-15,
+SYN-023,Rasmussen,Joyce,1960-09-15,F,Evergreen,MA-PPO,OH,en,,555-0107,,2025-06-12,494 Spruce Ln,Springfield,45505,2025-05-02,2025-10-01,,,,,
+SYN-024,Vasquez-Lindo,Cedric,1981-03-16,M,Evergreen,MEDICAID,OH,en,Dr R. Okafor,555-0196,,2023-10-19,104 Maple St,Toledo,43605,2024-06-18,2025-03-01,,,,,2027-05-26
+SYN-025,Osterman,Nadia,1994-01-27,F,Evergreen,MEDICAID,OH,vi,Dr S. Brennan,555-0148,,2026-03-12,839 Hawthorn Ave,Dayton,45410,2022-10-04,2018-09-01,,,,,2027-07-13
+SYN-026,Fairbanks,Deja,1991-04-01,F,Evergreen,DUAL,OH,en,Dr L. Haddad,555-0151,,2024-05-11,750 Alder St,Columbus,43204,2025-02-06,2023-04-01,,,,,2027-06-08
+SYN-027,Zielinski,Alicia,1954-06-04,F,Evergreen,MA-PPO,OH,en,Riverside FQHC,555-0115,,2024-06-09,462 Hickory Rd,Akron,44305,2024-01-31,2024-10-01,,,,,
+SYN-028,Adhikari,Desmond,1960-07-28,M,Evergreen,MA-PPO,OH,en,Dr L. Haddad,555-0100,,2025-10-14,884 Willow Ave,Dayton,45405,2022-05-15,2019-07-01,,,,,
+SYN-029,Dunmore,Bishnu,1988-04-18,M,Evergreen,MEDICAID,OH,so,Northfield Family Health,555-0127,,2025-03-08,972 Willow St,Dayton,45410,2025-12-05,2023-12-01,,,,,2027-09-06
+SYN-030,Barlowe,Quinn,1957-06-09,F,Evergreen,MA-PPO,OH,so,Dr R. Okafor,555-0138,,,492 Buckeye Ln,Columbus,43223,2023-06-28,2019-01-01,,,,,
+SYN-031,Stoltz,Priya,1989-06-26,F,Evergreen,MEDICAID,OH,en,Dr S. Brennan,555-0149,,2025-01-05,975 Maple Dr,Columbus,43211,2023-03-22,2021-06-01,,,,,2027-06-02
+SYN-032,Adhikari,Amina,1947-01-10,F,Evergreen,DSNP,OH,en,Riverside FQHC,555-0166,,2025-01-08,233 Spruce St,Dayton,45405,2022-07-22,2022-12-01,,,,,2027-04-23
+SYN-033,Mbeki,Samuel,1996-10-18,M,Evergreen,MEDICAID,OH,en,Dr L. Haddad,555-0169,,2023-05-05,529 Willow St,Columbus,43204,2023-11-23,2024-04-01,,,,,2027-04-29
+SYN-034,Ravensworth,Elena,1987-10-10,F,Evergreen,DUAL,OH,en,,555-0191,,2023-02-04,301 Hawthorn Ct,Dayton,45410,2024-04-19,2023-06-01,,Lorraine Ravensworth,spouse,2026-08-28,2026-12-18
+SYN-035,Falkner,Nadia,1987-01-01,F,Evergreen,MEDICAID,OH,en,Dr R. Okafor,555-0130,,,80 Juniper Ln,Columbus,43204,2026-07-30,2022-01-01,,,,,2027-09-26
+SYN-036,Tremblay,Zelda,2007-03-15,F,Evergreen,MEDICAID,OH,,Northfield Family Health,555-0157,,,527 Willow Ln,Dayton,45405,2022-08-23,2022-08-01,,,,,2027-01-11
+SYN-037,Abernathy,Gloria,1941-01-24,F,Evergreen,MA-PPO,OH,so,Dr P. Kowalski,555-0173,,2023-10-04,917 Hickory Ct,Columbus,43204,2023-12-25,2025-11-01,,,,,
+SYN-038,Hollis,Priya,1949-03-11,F,Evergreen,MA-PPO,OH,so,Dr P. Kowalski,555-0180,,2024-12-26,894 Linden St,Columbus,43204,2025-09-23,2018-10-01,,,,,
+SYN-039,Okonjo,Quinn,1978-07-15,F,Evergreen,MEDICAID,OH,en,Northfield Family Health,555-0189,,2024-04-29,417 Oak Ave,Columbus,43211,2022-01-17,2019-12-01,,,,,2027-06-13
+SYN-040,Kettering,Hassan,1951-01-22,M,Evergreen,MA-PPO,OH,so,Dr P. Kowalski,555-0126,,2024-09-22,744 Hickory St,Columbus,43204,2022-07-25,2023-01-01,,,,,
+SYN-041,Fairbanks,Beatriz,1989-03-26,F,Evergreen,MEDICAID,OH,en,Riverside FQHC,555-0147,,2023-06-24,419 Aspen Dr,Springfield,45505,2026-03-06,2026-04-01,,,,,2026-12-09
+SYN-042,Osterman,Dmitri,1966-09-20,M,Evergreen,DUAL,OH,so,Dr S. Brennan,555-0116,,2024-04-17,600 Sycamore Ct,Columbus,43204,2022-05-11,2022-02-01,,,,,2027-09-25
+SYN-043,Barlowe,Joyce,1994-03-06,F,Evergreen,MEDICAID,OH,en,Dr R. Okafor,555-0145,,2023-02-05,440 Buckeye Ln,Springfield,45505,2024-08-30,2020-07-01,,,,,2027-01-26
+SYN-044,Quillen,Emeka,1936-05-02,M,Evergreen,MA-PPO,OH,so,Dr J. Esposito,555-0109,,2023-08-08,426 Poplar Dr,Columbus,43211,2023-04-03,2021-04-01,,Walter Quillen,son,2028-08-17,
+SYN-045,Tobias,Priya,1950-02-19,F,Evergreen,DSNP,OH,ar,,555-0105,,2026-06-11,550 Linden Ct,Dayton,45405,2024-04-04,2022-08-01,,,,,2027-01-19
+SYN-046,Stoltz,Colette,1937-10-25,F,Evergreen,MA-PPO,OH,en,Dr J. Esposito,555-0123,,2025-06-05,976 Alder Ct,Columbus,43211,2026-09-08,2018-03-01,,Alicia Stoltz,spouse,2027-07-08,
+SYN-047,Lasko,Oscar,1996-09-21,M,Evergreen,MEDICAID,OH,en,,555-0139,,2025-12-21,47 Hickory Ln,Toledo,43605,2022-08-09,2025-07-01,,Rosa Lasko,spouse,2026-07-28,2027-02-01
+SYN-048,Kettering,Oscar,1980-02-15,M,Evergreen,DUAL,OH,so,Riverside FQHC,555-0165,,2023-01-14,429 Sycamore Ln,Columbus,43204,2026-04-22,2021-10-01,,Deja Kettering,niece,2026-10-29,2027-02-24
+SYN-049,Zielinski,Yusra,1943-08-10,F,Evergreen,MA-PPO,OH,en,Dr R. Okafor,555-0164,,2025-08-14,835 Aspen St,Springfield,45505,2026-03-11,2022-03-01,,,,,
+SYN-050,Quillen,Wanda,1936-02-14,F,Evergreen,MA-PPO,OH,en,Northfield Family Health,555-0170,,2025-11-15,856 Maple Rd,Columbus,43204,2024-11-30,2019-03-01,,Jerome Quillen,son,2026-08-14,
+SYN-012-M,Brennock,Amina,1948-10-03,F,Evergreen,DSNP,OH,en,,555-0117,,,969 Alder St,Columbus,43223,,2023-09-01,2024-09-30,,,,
+SYN-017-M,Brennock,Lorraine,2002-02-20,F,Evergreen,MEDICAID,OH,en,,555-0150,,,536 Oak St,Toledo,43605,,2016-03-01,2018-06-30,,,,
+SYN-039-M,Ferrante,Quinn,1978-07-15,F,Evergreen,MEDICAID,OH,en,,555-0185,,,934 Linden St,Dayton,45405,,2018-01-01,2019-09-30,,,,
+SYN-041-M,Hartwell,Beatriz,1989-03-26,F,Evergreen,MEDICAID,OH,en,,555-0187,,,78 Willow St,Toledo,43605,,2023-09-01,2025-10-31,,,,
+SYN-049-M,Ferrante,Yusra,1943-08-10,F,Evergreen,MA-PPO,OH,en,,555-0112,,,846 Aspen St,Dayton,45410,,2019-04-01,2021-09-30,,,,

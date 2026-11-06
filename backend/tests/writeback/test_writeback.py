@@ -205,3 +205,27 @@ def test_resolved_conflicts_close_when_the_save_syncs(api: Api) -> None:
             select(Fact).where(Fact.member_id == "SYN-001", Fact.key == "furosemide")
         ).all()
     assert len(sources) >= 2  # source Facts are never deleted
+
+
+def test_the_worker_retries_due_saves_and_reports_them(
+    api: Api, monkeypatch: Any, caplog: Any
+) -> None:
+    from app.writeback import worker
+    from app.writeback.client import CmClient
+
+    eid = ready_to_save(api)
+    api.cm.post("/admin/mode", json={"mode": "down"})
+    save(api, eid)
+    api.cm.post("/admin/mode", json={"mode": "up"})
+    monkeypatch.setattr(worker, "get_session_factory", lambda: api.session)
+    monkeypatch.setattr(
+        worker, "get_clock", lambda: FixedClock(REFERENCE_INSTANT + timedelta(minutes=5))
+    )
+    monkeypatch.setattr(worker, "get_cm_client", lambda: CmClient(api.cm))
+
+    caplog.set_level("INFO", logger="casecompass.writeback")
+    summary = worker.run_once()
+
+    assert len(summary.synced) == 1 and len(cm_entries(api)) == 1
+    (record,) = [r for r in caplog.records if r.name == "casecompass.writeback"]
+    assert (record.synced, record.retrying, record.alerted) == (1, 0, 0)  # counts, not id lists

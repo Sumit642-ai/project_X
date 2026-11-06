@@ -83,7 +83,7 @@ def collect(session: Session, clock: Clock) -> dict[str, Any]:
             )
         )
     )
-    lags = [(s - f).total_seconds() for f, s in synced]
+    lags = [(s - f).total_seconds() for f, s in synced if f is not None and s is not None]
     alerted = session.scalar(
         select(func.count()).select_from(WritebackOutbox).where(WritebackOutbox.status == "alerted")
     )
@@ -106,9 +106,14 @@ def collect(session: Session, clock: Clock) -> dict[str, Any]:
         "writeback": {
             "pending": len(pending),
             "oldest_pending_seconds": round(
-                max((now - p.first_attempt_at).total_seconds() for p in pending), 1
+                max(
+                    (now - p.first_attempt_at).total_seconds()
+                    for p in pending
+                    if p.first_attempt_at
+                ),
+                1,
             )
-            if pending
+            if any(p.first_attempt_at for p in pending)
             else 0,
             "alerted": alerted or 0,
             "synced": len(lags),

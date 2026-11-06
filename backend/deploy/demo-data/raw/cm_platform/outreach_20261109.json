@@ -1,0 +1,712 @@
+[
+  {
+    "outreach_id": "SYN-OUT-000001",
+    "member_id": "SYN-001",
+    "phone": "555-0143",
+    "channel": "call",
+    "attempted_at": "2026-06-01T18:30:00-04:00",
+    "outcome": "answered",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000002",
+    "member_id": "SYN-001",
+    "phone": "555-0177",
+    "channel": "call",
+    "attempted_at": "2026-10-14T10:30:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000003",
+    "member_id": "SYN-001",
+    "phone": "555-0177",
+    "channel": "call",
+    "attempted_at": "2026-10-21T14:00:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000004",
+    "member_id": "SYN-002",
+    "phone": "555-0121",
+    "channel": "call",
+    "attempted_at": "2026-10-05T11:00:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Outreach team"
+  },
+  {
+    "outreach_id": "SYN-OUT-000005",
+    "member_id": "SYN-002",
+    "phone": "555-0121",
+    "channel": "call",
+    "attempted_at": "2026-10-12T15:20:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Outreach team"
+  },
+  {
+    "outreach_id": "SYN-OUT-000006",
+    "member_id": "SYN-002",
+    "phone": "555-0121",
+    "channel": "call",
+    "attempted_at": "2026-10-20T10:10:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Outreach team"
+  },
+  {
+    "outreach_id": "SYN-OUT-000007",
+    "member_id": "SYN-002",
+    "phone": "555-0121",
+    "channel": "call",
+    "attempted_at": "2026-10-29T16:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Outreach team"
+  },
+  {
+    "outreach_id": "SYN-OUT-000008",
+    "member_id": "SYN-003",
+    "phone": "555-0110",
+    "channel": "call",
+    "attempted_at": "2026-10-20T13:15:00-04:00",
+    "outcome": "disconnected",
+    "language_used": "en",
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000009",
+    "member_id": "SYN-004",
+    "phone": "555-0133",
+    "channel": "call",
+    "attempted_at": "2026-10-16T10:00:00-04:00",
+    "outcome": "disconnected",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000010",
+    "member_id": "SYN-005",
+    "phone": "555-0155",
+    "channel": "call",
+    "attempted_at": "2026-10-21T11:15:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000011",
+    "member_id": "SYN-005",
+    "phone": "555-0155",
+    "channel": "call",
+    "attempted_at": "2026-10-28T13:40:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000012",
+    "member_id": "SYN-005",
+    "phone": "555-0155",
+    "channel": "call",
+    "attempted_at": "2026-11-04T10:20:00-05:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000013",
+    "member_id": "SYN-006",
+    "phone": "555-0136",
+    "channel": "call",
+    "attempted_at": "2026-10-08T14:45:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000014",
+    "member_id": "SYN-008",
+    "phone": "555-0152",
+    "channel": "call",
+    "attempted_at": "2026-10-02T10:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000015",
+    "member_id": "SYN-008",
+    "phone": "555-0152",
+    "channel": "call",
+    "attempted_at": "2026-10-02T15:30:00-04:00",
+    "outcome": "answered",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000016",
+    "member_id": "SYN-009",
+    "phone": "555-0104",
+    "channel": "call",
+    "attempted_at": "2026-10-01T12:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000017",
+    "member_id": "SYN-009",
+    "phone": "555-0104",
+    "channel": "call",
+    "attempted_at": "2026-10-05T16:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000018",
+    "member_id": "SYN-012",
+    "phone": "555-0114",
+    "channel": "call",
+    "attempted_at": "2026-10-28T09:15:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000019",
+    "member_id": "SYN-013",
+    "phone": "555-0159",
+    "channel": "call",
+    "attempted_at": "2026-10-20T13:15:00-04:00",
+    "outcome": "answered",
+    "language_used": "es",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000020",
+    "member_id": "SYN-015",
+    "phone": "555-0178",
+    "channel": "call",
+    "attempted_at": "2026-10-07T15:00:00-04:00",
+    "outcome": "answered",
+    "language_used": "so",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000021",
+    "member_id": "SYN-015",
+    "phone": "555-0178",
+    "channel": "call",
+    "attempted_at": "2026-10-15T10:45:00-04:00",
+    "outcome": "answered",
+    "language_used": "so",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000022",
+    "member_id": "SYN-016",
+    "phone": "555-0156",
+    "channel": "call",
+    "attempted_at": "2026-10-05T11:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000023",
+    "member_id": "SYN-016",
+    "phone": "555-0156",
+    "channel": "call",
+    "attempted_at": "2026-10-16T10:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000024",
+    "member_id": "SYN-016",
+    "phone": "555-0156",
+    "channel": "call",
+    "attempted_at": "2026-10-23T12:00:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000025",
+    "member_id": "SYN-016",
+    "phone": "555-0156",
+    "channel": "call",
+    "attempted_at": "2026-10-28T16:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000026",
+    "member_id": "SYN-017",
+    "phone": "555-0175",
+    "channel": "call",
+    "attempted_at": "2026-10-03T13:15:00-04:00",
+    "outcome": "answered",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000027",
+    "member_id": "SYN-018",
+    "phone": "555-0119",
+    "channel": "call",
+    "attempted_at": "2026-10-08T16:30:00-04:00",
+    "outcome": "no_answer",
+    "language_used": null,
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000028",
+    "member_id": "SYN-019",
+    "phone": "555-0194",
+    "channel": "call",
+    "attempted_at": "2026-10-01T14:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "ne",
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000029",
+    "member_id": "SYN-019",
+    "phone": "555-0194",
+    "channel": "call",
+    "attempted_at": "2026-10-15T13:00:00-04:00",
+    "outcome": "answered",
+    "language_used": "ne",
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000030",
+    "member_id": "SYN-020",
+    "phone": "555-0102",
+    "channel": "call",
+    "attempted_at": "2026-10-04T12:00:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000031",
+    "member_id": "SYN-020",
+    "phone": "555-0102",
+    "channel": "call",
+    "attempted_at": "2026-10-04T16:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000032",
+    "member_id": "SYN-020",
+    "phone": "555-0102",
+    "channel": "call",
+    "attempted_at": "2026-10-15T10:00:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000033",
+    "member_id": "SYN-020",
+    "phone": "555-0102",
+    "channel": "call",
+    "attempted_at": "2026-10-18T13:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000034",
+    "member_id": "SYN-022",
+    "phone": "555-0195",
+    "channel": "call",
+    "attempted_at": "2026-10-14T10:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "vi",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000035",
+    "member_id": "SYN-022",
+    "phone": "555-0195",
+    "channel": "call",
+    "attempted_at": "2026-10-29T10:45:00-04:00",
+    "outcome": "answered",
+    "language_used": "vi",
+    "cm_name": "Luis"
+  },
+  {
+    "outreach_id": "SYN-OUT-000036",
+    "member_id": "SYN-026",
+    "phone": "555-0151",
+    "channel": "call",
+    "attempted_at": "2026-10-16T12:15:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000037",
+    "member_id": "SYN-027",
+    "phone": "555-0115",
+    "channel": "call",
+    "attempted_at": "2026-10-11T16:45:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "en",
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000038",
+    "member_id": "SYN-027",
+    "phone": "555-0115",
+    "channel": "call",
+    "attempted_at": "2026-10-23T09:15:00-04:00",
+    "outcome": "answered",
+    "language_used": "en",
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000039",
+    "member_id": "SYN-027",
+    "phone": null,
+    "channel": "mail",
+    "attempted_at": "2026-10-18T10:45:00-04:00",
+    "outcome": "returned_undeliverable",
+    "language_used": null,
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000040",
+    "member_id": "SYN-029",
+    "phone": "555-0127",
+    "channel": "call",
+    "attempted_at": "2026-10-14T14:00:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "so",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000041",
+    "member_id": "SYN-029",
+    "phone": "555-0127",
+    "channel": "call",
+    "attempted_at": "2026-10-30T13:00:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "so",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000042",
+    "member_id": "SYN-029",
+    "phone": null,
+    "channel": "mail",
+    "attempted_at": "2026-10-13T10:30:00-04:00",
+    "outcome": "returned_undeliverable",
+    "language_used": null,
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000043",
+    "member_id": "SYN-030",
+    "phone": "555-0138",
+    "channel": "call",
+    "attempted_at": "2026-10-03T15:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000044",
+    "member_id": "SYN-030",
+    "phone": "555-0138",
+    "channel": "call",
+    "attempted_at": "2026-10-05T13:00:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000045",
+    "member_id": "SYN-030",
+    "phone": "555-0138",
+    "channel": "call",
+    "attempted_at": "2026-10-10T17:15:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000046",
+    "member_id": "SYN-030",
+    "phone": "555-0138",
+    "channel": "call",
+    "attempted_at": "2026-10-13T09:15:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000047",
+    "member_id": "SYN-032",
+    "phone": "555-0166",
+    "channel": "call",
+    "attempted_at": "2026-10-14T09:00:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000048",
+    "member_id": "SYN-032",
+    "phone": null,
+    "channel": "mail",
+    "attempted_at": "2026-10-28T08:45:00-04:00",
+    "outcome": "returned_undeliverable",
+    "language_used": null,
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000049",
+    "member_id": "SYN-033",
+    "phone": "555-0169",
+    "channel": "call",
+    "attempted_at": "2026-10-22T15:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000050",
+    "member_id": "SYN-035",
+    "phone": "555-0130",
+    "channel": "call",
+    "attempted_at": "2026-10-06T13:15:00-04:00",
+    "outcome": "disconnected",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000051",
+    "member_id": "SYN-036",
+    "phone": "555-0157",
+    "channel": "call",
+    "attempted_at": "2026-10-18T10:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": null,
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000052",
+    "member_id": "SYN-036",
+    "phone": "555-0157",
+    "channel": "call",
+    "attempted_at": "2026-10-25T11:15:00-04:00",
+    "outcome": "voicemail",
+    "language_used": null,
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000053",
+    "member_id": "SYN-036",
+    "phone": null,
+    "channel": "mail",
+    "attempted_at": "2026-10-15T19:00:00-04:00",
+    "outcome": "returned_undeliverable",
+    "language_used": null,
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000054",
+    "member_id": "SYN-037",
+    "phone": "555-0173",
+    "channel": "call",
+    "attempted_at": "2026-10-02T17:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "so",
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000055",
+    "member_id": "SYN-038",
+    "phone": "555-0180",
+    "channel": "call",
+    "attempted_at": "2026-10-15T12:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "so",
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000056",
+    "member_id": "SYN-038",
+    "phone": "555-0180",
+    "channel": "call",
+    "attempted_at": "2026-10-24T14:00:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "so",
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000057",
+    "member_id": "SYN-039",
+    "phone": "555-0189",
+    "channel": "call",
+    "attempted_at": "2026-10-24T09:45:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000058",
+    "member_id": "SYN-040",
+    "phone": "555-0126",
+    "channel": "call",
+    "attempted_at": "2026-10-07T09:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000059",
+    "member_id": "SYN-040",
+    "phone": "555-0126",
+    "channel": "call",
+    "attempted_at": "2026-10-12T09:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000060",
+    "member_id": "SYN-040",
+    "phone": "555-0126",
+    "channel": "call",
+    "attempted_at": "2026-10-25T17:15:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000061",
+    "member_id": "SYN-040",
+    "phone": "555-0126",
+    "channel": "call",
+    "attempted_at": "2026-10-30T14:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000062",
+    "member_id": "SYN-041",
+    "phone": "555-0147",
+    "channel": "call",
+    "attempted_at": "2026-10-20T09:00:00-04:00",
+    "outcome": "disconnected",
+    "language_used": "en",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000063",
+    "member_id": "SYN-042",
+    "phone": "555-0116",
+    "channel": "call",
+    "attempted_at": "2026-10-22T17:00:00-04:00",
+    "outcome": "disconnected",
+    "language_used": "so",
+    "cm_name": "Alma"
+  },
+  {
+    "outreach_id": "SYN-OUT-000064",
+    "member_id": "SYN-043",
+    "phone": "555-0145",
+    "channel": "call",
+    "attempted_at": "2026-10-12T11:45:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000065",
+    "member_id": "SYN-043",
+    "phone": "555-0145",
+    "channel": "call",
+    "attempted_at": "2026-10-15T16:30:00-04:00",
+    "outcome": "no_answer",
+    "language_used": "en",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000066",
+    "member_id": "SYN-044",
+    "phone": "555-0109",
+    "channel": "call",
+    "attempted_at": "2026-10-07T17:45:00-04:00",
+    "outcome": "answered",
+    "language_used": "so",
+    "cm_name": "Maria"
+  },
+  {
+    "outreach_id": "SYN-OUT-000067",
+    "member_id": "SYN-045",
+    "phone": "555-0105",
+    "channel": "call",
+    "attempted_at": "2026-10-15T16:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000068",
+    "member_id": "SYN-045",
+    "phone": "555-0105",
+    "channel": "call",
+    "attempted_at": "2026-10-27T09:00:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000069",
+    "member_id": "SYN-045",
+    "phone": "555-0105",
+    "channel": "call",
+    "attempted_at": "2026-10-30T12:30:00-04:00",
+    "outcome": "voicemail",
+    "language_used": "en",
+    "cm_name": "Grace"
+  },
+  {
+    "outreach_id": "SYN-OUT-000070",
+    "member_id": "SYN-046",
+    "phone": null,
+    "channel": "mail",
+    "attempted_at": "2026-10-02T08:30:00-04:00",
+    "outcome": "returned_undeliverable",
+    "language_used": null,
+    "cm_name": "Devon"
+  },
+  {
+    "outreach_id": "SYN-OUT-000071",
+    "member_id": "SYN-050",
+    "phone": "555-0170",
+    "channel": "call",
+    "attempted_at": "2026-10-20T12:30:00-04:00",
+    "outcome": "disconnected",
+    "language_used": "en",
+    "cm_name": "Maria"
+  }
+]

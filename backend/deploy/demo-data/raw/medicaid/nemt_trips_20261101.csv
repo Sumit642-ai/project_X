@@ -1,0 +1,12 @@
+trip_id,member_id,trip_date,pickup_address,destination,status,as_of
+SYN-TRIP-000001,SYN-003,2026-10-09,"1450 Wren Way, Dayton",Lakeview Pulmonary Clinic,no_show,2026-10-31
+SYN-TRIP-000002,SYN-003,2026-10-23,"1450 Wren Way, Dayton",Lakeview Pulmonary Clinic,no_show,2026-10-31
+SYN-TRIP-000003,SYN-018,2026-09-28,"525 Juniper St, Dayton",Riverside FQHC clinic,completed,2026-10-31
+SYN-TRIP-000004,SYN-018,2026-10-20,"525 Juniper St, Dayton",Riverside FQHC clinic,completed,2026-10-31
+SYN-TRIP-000005,SYN-029,2026-10-22,"972 Willow St, Dayton",Northfield Family Health clinic,completed,2026-10-31
+SYN-TRIP-000006,SYN-029,2026-10-06,"972 Willow St, Dayton",Northfield Family Health clinic,completed,2026-10-31
+SYN-TRIP-000007,SYN-031,2026-09-13,"975 Maple Dr, Columbus",Dr S. Brennan clinic,completed,2026-10-31
+SYN-TRIP-000008,SYN-031,2026-09-24,"975 Maple Dr, Columbus",Dr S. Brennan clinic,completed,2026-10-31
+SYN-TRIP-000009,SYN-033,2026-09-14,"529 Willow St, Columbus",Dr L. Haddad clinic,completed,2026-10-31
+SYN-TRIP-000010,SYN-034,2026-10-29,"301 Hawthorn Ct, Dayton",Northfield Family Health clinic,completed,2026-10-31
+SYN-TRIP-000011,SYN-041,2026-10-01,"419 Aspen Dr, Springfield",Riverside FQHC clinic,completed,2026-10-31

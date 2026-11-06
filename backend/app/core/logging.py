@@ -9,8 +9,8 @@ import json
 import logging
 import re
 import sys
-from datetime import UTC, datetime
 from collections.abc import Iterable
+from datetime import UTC, datetime
 from typing import Any
 
 PHONE = re.compile(r"(?<!\d)(?:\+?1[-.\s]?)?(?:\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]\d{4}(?!\d)")

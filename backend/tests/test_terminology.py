@@ -18,9 +18,7 @@ LABEL = "flagged by data layer"
 
 def _ui_sources() -> list[Path]:
     return [
-        p
-        for p in FRONTEND.rglob("*.tsx")
-        if ".test." not in p.name and "__tests__" not in p.parts
+        p for p in FRONTEND.rglob("*.tsx") if ".test." not in p.name and "__tests__" not in p.parts
     ]
 
 

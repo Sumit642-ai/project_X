@@ -1,0 +1,63 @@
+screen_id,member_id,instrument,domain,screen_date,result,score,score_max,risk_level
+SYN-SCR-000001,SYN-001,HRA,general,2026-03-04,Lives with wife; independent,,,
+SYN-SCR-000002,SYN-004,AHC-HRSN,housing,2025-12-01,Stable,,,low
+SYN-SCR-000003,SYN-005,ZBI-4,caregiver_strain,2026-02-10,High caregiver burden,14,16,high
+SYN-SCR-000004,SYN-006,HRA,general,2025-12-05,Lives alone; independent,,,low
+SYN-SCR-000005,SYN-007,HRA,general,2026-05-05,Lives with family; needs help with transport,,,low
+SYN-SCR-000006,SYN-008,HRA,general,2026-05-04,Lives with spouse; independent,,,low
+SYN-SCR-000007,SYN-008,AHC-HRSN,housing,2026-04-17,Stable,,,low
+SYN-SCR-000008,SYN-009,HRA,general,2026-04-13,Lives with family; needs help with transport,,,low
+SYN-SCR-000009,SYN-010,HRA,general,2026-03-29,Lives with family; needs help with transport,,,low
+SYN-SCR-000010,SYN-010,AHC-HRSN,housing,2026-10-04,Stable,,,low
+SYN-SCR-000011,SYN-012,HRA,general,2026-02-24,Lives alone; independent,,,low
+SYN-SCR-000012,SYN-012,AHC-HRSN,housing,2026-05-30,Stable,,,low
+SYN-SCR-000013,SYN-013,AHC-HRSN,housing,2026-05-23,Stable,,,low
+SYN-SCR-000014,SYN-014,HRA,general,2026-10-27,Lives with family; needs help with transport,,,moderate
+SYN-SCR-000015,SYN-015,HRA,general,2026-09-21,Lives with family; needs help with transport,,,low
+SYN-SCR-000016,SYN-016,HRA,general,2026-09-21,Lives with family; needs help with transport,,,moderate
+SYN-SCR-000017,SYN-016,ZBI-4,caregiver_strain,2026-03-26,Caregiver burden screened,7,16,low
+SYN-SCR-000018,SYN-017,HRA,general,2026-09-12,Lives alone; independent,,,moderate
+SYN-SCR-000019,SYN-018,AHC-HRSN,housing,2026-05-20,Stable,,,low
+SYN-SCR-000020,SYN-018,ZBI-4,caregiver_strain,2026-03-10,Caregiver burden screened,4,16,low
+SYN-SCR-000021,SYN-019,HRA,general,2026-05-07,Lives alone; independent,,,low
+SYN-SCR-000022,SYN-020,HRA,general,2026-03-05,Lives alone; independent,,,moderate
+SYN-SCR-000023,SYN-020,AHC-HRSN,housing,2026-09-01,Stable,,,low
+SYN-SCR-000024,SYN-021,HRA,general,2026-04-10,Lives with spouse; independent,,,moderate
+SYN-SCR-000025,SYN-022,HRA,general,2026-03-27,Lives alone; independent,,,low
+SYN-SCR-000026,SYN-022,ZBI-4,caregiver_strain,2026-07-10,Caregiver burden screened,4,16,low
+SYN-SCR-000027,SYN-026,AHC-HRSN,housing,2026-06-23,Housing unstable,,,moderate
+SYN-SCR-000028,SYN-027,HRA,general,2025-12-08,Lives with spouse; independent,,,moderate
+SYN-SCR-000029,SYN-027,AHC-HRSN,housing,2025-10-19,Stable,,,low
+SYN-SCR-000030,SYN-028,HRA,general,2026-08-02,Lives with family; needs help with transport,,,low
+SYN-SCR-000031,SYN-029,HRA,general,2026-10-05,Lives with family; needs help with transport,,,moderate
+SYN-SCR-000032,SYN-029,AHC-HRSN,housing,2025-11-06,Stable,,,low
+SYN-SCR-000033,SYN-031,HRA,general,2026-02-18,Lives with family; needs help with transport,,,moderate
+SYN-SCR-000034,SYN-031,AHC-HRSN,housing,2026-06-04,Stable,,,low
+SYN-SCR-000035,SYN-032,HRA,general,2026-05-11,Lives alone; independent,,,moderate
+SYN-SCR-000036,SYN-032,AHC-HRSN,housing,2025-11-29,Stable,,,low
+SYN-SCR-000037,SYN-033,HRA,general,2026-10-06,Lives alone; independent,,,low
+SYN-SCR-000038,SYN-034,ZBI-4,caregiver_strain,2026-10-04,Caregiver burden screened,4,16,low
+SYN-SCR-000039,SYN-035,AHC-HRSN,housing,2026-05-03,Stable,,,low
+SYN-SCR-000040,SYN-036,HRA,general,2026-08-03,Lives with spouse; independent,,,low
+SYN-SCR-000041,SYN-036,AHC-HRSN,housing,2025-12-15,Stable,,,low
+SYN-SCR-000042,SYN-038,HRA,general,2026-02-25,Lives alone; independent,,,moderate
+SYN-SCR-000043,SYN-039,HRA,general,2026-08-01,Lives alone; independent,,,moderate
+SYN-SCR-000044,SYN-039,AHC-HRSN,housing,2026-06-16,Stable,,,low
+SYN-SCR-000045,SYN-040,HRA,general,2026-04-27,Lives alone; independent,,,moderate
+SYN-SCR-000046,SYN-041,HRA,general,2026-04-01,Lives alone; independent,,,low
+SYN-SCR-000047,SYN-041,AHC-HRSN,housing,2026-09-08,Housing unstable,,,moderate
+SYN-SCR-000048,SYN-042,AHC-HRSN,housing,2026-08-29,Stable,,,low
+SYN-SCR-000049,SYN-043,HRA,general,2025-12-08,Lives alone; independent,,,moderate
+SYN-SCR-000050,SYN-043,AHC-HRSN,housing,2026-10-18,Stable,,,low
+SYN-SCR-000051,SYN-044,HRA,general,2026-06-30,Lives with spouse; independent,,,moderate
+SYN-SCR-000052,SYN-044,ZBI-4,caregiver_strain,2026-10-20,Caregiver burden screened,10,16,moderate
+SYN-SCR-000053,SYN-045,AHC-HRSN,housing,2026-05-26,Housing unstable,,,moderate
+SYN-SCR-000054,SYN-046,HRA,general,2026-08-19,Lives with family; needs help with transport,,,moderate
+SYN-SCR-000055,SYN-046,AHC-HRSN,housing,2025-11-01,Stable,,,low
+SYN-SCR-000056,SYN-046,ZBI-4,caregiver_strain,2026-03-02,Caregiver burden screened,4,16,low
+SYN-SCR-000057,SYN-047,HRA,general,2026-10-03,Lives alone; independent,,,low
+SYN-SCR-000058,SYN-047,AHC-HRSN,housing,2026-06-02,Housing unstable,,,moderate
+SYN-SCR-000059,SYN-047,ZBI-4,caregiver_strain,2026-09-25,Caregiver burden screened,7,16,low
+SYN-SCR-000060,SYN-048,ZBI-4,caregiver_strain,2026-03-20,Caregiver burden screened,8,16,moderate
+SYN-SCR-000061,SYN-049,HRA,general,2026-05-29,Lives with spouse; independent,,,low
+SYN-SCR-000062,SYN-050,ZBI-4,caregiver_strain,2026-07-10,Caregiver burden screened,3,16,low

@@ -28,3 +28,6 @@ e2e/.data/
 # Coverage report (make coverage)
 coverage-report/
 backend/.coverage
+
+# Vercel CLI link folder. backend/deploy/ (the demo bundle) IS committed: deploys start from it.
+.vercel/

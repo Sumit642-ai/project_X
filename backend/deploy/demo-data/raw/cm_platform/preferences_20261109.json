@@ -1,0 +1,352 @@
+[
+  {
+    "member_id": "SYN-001",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Maria",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-002",
+    "preferred_language": "vi",
+    "proxy_language": null,
+    "assigned_cm": null,
+    "cm_language_required": "vi"
+  },
+  {
+    "member_id": "SYN-003",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-004",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-005",
+    "preferred_language": "ht",
+    "proxy_language": "en",
+    "assigned_cm": "Maria",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-006",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-007",
+    "preferred_language": "es",
+    "proxy_language": null,
+    "assigned_cm": "Luis",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-008",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Luis",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-009",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Grace",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-010",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Luis",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-011",
+    "preferred_language": "es",
+    "proxy_language": null,
+    "assigned_cm": "Luis",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-012",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Grace",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-013",
+    "preferred_language": "es",
+    "proxy_language": null,
+    "assigned_cm": "Luis",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-014",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Maria",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-015",
+    "preferred_language": "so",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-016",
+    "preferred_language": "vi",
+    "proxy_language": "en",
+    "assigned_cm": "Luis",
+    "cm_language_required": "vi"
+  },
+  {
+    "member_id": "SYN-017",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Grace",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-018",
+    "preferred_language": null,
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-019",
+    "preferred_language": "ne",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": "ne"
+  },
+  {
+    "member_id": "SYN-020",
+    "preferred_language": "so",
+    "proxy_language": null,
+    "assigned_cm": "Luis",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-021",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-022",
+    "preferred_language": "vi",
+    "proxy_language": "en",
+    "assigned_cm": "Luis",
+    "cm_language_required": "vi"
+  },
+  {
+    "member_id": "SYN-023",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Luis",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-024",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-025",
+    "preferred_language": "vi",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": "vi"
+  },
+  {
+    "member_id": "SYN-026",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Maria",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-027",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-028",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-029",
+    "preferred_language": "so",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-030",
+    "preferred_language": "so",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-031",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Grace",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-032",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-033",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Maria",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-034",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-035",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-036",
+    "preferred_language": null,
+    "proxy_language": null,
+    "assigned_cm": "Grace",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-037",
+    "preferred_language": "so",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-038",
+    "preferred_language": "so",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-039",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Maria",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-040",
+    "preferred_language": "so",
+    "proxy_language": null,
+    "assigned_cm": "Grace",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-041",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-042",
+    "preferred_language": "so",
+    "proxy_language": null,
+    "assigned_cm": "Alma",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-043",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Maria",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-044",
+    "preferred_language": "so",
+    "proxy_language": "en",
+    "assigned_cm": "Maria",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-045",
+    "preferred_language": "ar",
+    "proxy_language": null,
+    "assigned_cm": "Grace",
+    "cm_language_required": "ar"
+  },
+  {
+    "member_id": "SYN-046",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-047",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Devon",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-048",
+    "preferred_language": "so",
+    "proxy_language": "en",
+    "assigned_cm": "Maria",
+    "cm_language_required": "so"
+  },
+  {
+    "member_id": "SYN-049",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Luis",
+    "cm_language_required": null
+  },
+  {
+    "member_id": "SYN-050",
+    "preferred_language": "en",
+    "proxy_language": null,
+    "assigned_cm": "Maria",
+    "cm_language_required": null
+  }
+]

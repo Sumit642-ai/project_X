@@ -132,7 +132,10 @@ def test_raymonds_furosemide_covered_through(morning: Session) -> None:
         if v.fact.type == "medication" and v.fact.key == "furosemide"
     ]
     claim = next(v for v in fills if v.value.get("strength") == "40 mg")
-    assert (claim.value["fill_date"], claim.value["covered_through"]) == ("2026-09-30", "2026-10-30")
+    assert (claim.value["fill_date"], claim.value["covered_through"]) == (
+        "2026-09-30",
+        "2026-10-30",
+    )
 
 
 # --- Sheet 8: contact ladders -----------------------------------------------------------------
@@ -146,8 +149,10 @@ LADDERS = {
     "SYN-002": [("555-0121", "0.60")],
 }
 CONFIDENCE_DIFFERS = {
-    "SYN-003": "555-0110 disconnected: 0.60 recency (undated) x 0.95 eligibility x 0.10 = 0.06, annex 0.05",
-    "SYN-004": "555-0133 disconnected: 0.60 recency (undated) x 0.95 eligibility x 0.10 = 0.06, annex 0.10",
+    "SYN-003": "555-0110 disconnected: 0.60 recency (undated) x 0.95 eligibility x 0.10 "
+    "= 0.06, annex 0.05",
+    "SYN-004": "555-0133 disconnected: 0.60 recency (undated) x 0.95 eligibility x 0.10 "
+    "= 0.06, annex 0.10",
     "SYN-005": A_DIFFERS["SYN-005"],
     "SYN-002": A_DIFFERS["SYN-002"],
 }

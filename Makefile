@@ -10,7 +10,7 @@ endif
 
 COMPOSE := docker compose
 
-.PHONY: help install up down logs test test-backend test-frontend lint seed migrate e2e synth ingest demo coverage audit perf
+.PHONY: help install up down logs test test-backend test-frontend lint seed migrate e2e synth ingest demo coverage audit perf vercel-bundle
 
 help:
 	@echo "make install  - create backend venv and install frontend/e2e deps"
@@ -27,6 +27,7 @@ help:
 	@echo "make coverage - backend tests with line coverage (85%+ on signals, scoring, consent, writeback, identity)"
 	@echo "make audit    - dependency vulnerability scan (pip-audit, npm audit)"
 	@echo "make perf     - p95 of /queue and /360 with 5,000 background members, nightly pipeline time"
+	@echo "make vercel-bundle - rebuild backend/deploy/ (the demo data a Vercel deploy starts from)"
 
 .env:
 	cp .env.example .env
@@ -87,3 +88,6 @@ audit:
 
 perf:
 	cd backend && $(VENV_BIN)/python -m app.perf
+
+vercel-bundle:
+	cd backend && $(VENV_BIN)/python -m app.demo bundle

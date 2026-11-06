@@ -24,7 +24,7 @@ def login(
             settings.login_rate_limit, settings.login_rate_window_seconds
         )
         request.app.state.login_limiter = limiter
-    limiter.check(client_key(request))
+    limiter.check(client_key(request, settings.trust_proxy_headers))
     user = session.get(User, body.username)
     if user is None:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "unknown demo user")

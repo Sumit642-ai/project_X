@@ -10,6 +10,7 @@ import json
 import sqlite3
 import time
 from collections.abc import Callable
+from contextlib import closing
 from pathlib import Path
 from typing import Any, TypeVar
 
@@ -55,8 +56,9 @@ def queue_snapshot(session: Session, clock: FixedClock) -> dict[str, Any]:
 
 
 def copy_sqlite(source: Path, target: Path) -> None:
-    """Consistent copy with the SQLite backup API (safe while other connections are open)."""
-    with sqlite3.connect(source) as src, sqlite3.connect(target) as dst:
+    """Consistent copy with the SQLite backup API (safe while other connections are open).
+    sqlite3's own context manager only commits; closing() releases the files."""
+    with closing(sqlite3.connect(source)) as src, closing(sqlite3.connect(target)) as dst:
         src.backup(dst)
 
 

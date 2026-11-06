@@ -17,7 +17,7 @@ from typing import Any
 from sqlalchemy.orm import Session
 
 from app.core.clock import PLAN_TZ, Clock
-from app.core.config import REPO_ROOT, Settings
+from app.core.config import Settings, get_settings
 from app.datalayer_mock.identity import run_matching
 from app.datalayer_mock.ingest import ingest_file
 from app.datalayer_mock.ingest.models import Load
@@ -27,7 +27,6 @@ from app.encounters.service import resolve_tasks_by_data
 from app.facts import refresh_facts
 from app.scoring.service import score_members
 
-INTRADAY_SCRIPT = REPO_ROOT / "data" / "seed" / "demo" / "intraday.json"
 # feed -> (raw sub-directory, file stem)
 SNAPSHOTS = {
     "pharmacy": ("pharmacy", "pharmacy_ncpdp"),
@@ -65,7 +64,9 @@ class Step:
     deliveries: list[dict[str, Any]]
 
 
-def intraday_steps(path: Path = INTRADAY_SCRIPT) -> list[Step]:
+def intraday_steps(path: Path | None = None) -> list[Step]:
+    """The scripted deliveries in <SEED_DIR>/demo/intraday.json."""
+    path = path or get_settings().seed_dir / "demo" / "intraday.json"
     data = json.loads(path.read_text(encoding="utf-8"))
     return [Step(**{k: v for k, v in s.items() if not k.startswith("_")}) for s in data["steps"]]
 

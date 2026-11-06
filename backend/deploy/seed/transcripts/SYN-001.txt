@@ -1,0 +1,22 @@
+1. NURSE: Good morning, this is Maria, a nurse case manager with your health plan. Am I speaking with Raymond Tull?
+2. MEMBER: Yes, this is Raymond. My wife Joan is here too, you're on speaker.
+3. NURSE: Thank you. Before we talk about your health, can you confirm your date of birth for me?
+4. MEMBER: (gives date of birth; it matches the record)
+5. NURSE: Thank you, that matches. I'm calling because you came home from the hospital over the weekend. How are you feeling?
+6. MEMBER: Tired. My ankles are a bit puffy again.
+7. NURSE: Have you been weighing yourself each morning?
+8. CAREGIVER: I've been writing it down. He was 182 when he came home and this morning he was 184. So he's up 2 pounds.
+9. NURSE: Thank you, Joan. Let's go over the water pill. The hospital list says furosemide 80 milligrams once a day. Do you have that at home?
+10. CAREGIVER: No. We have no furosemide in the house at all. The old bottle of the 40s ran out before he went in, and we haven't picked up anything new.
+11. MEMBER: Nobody's called in the new one as far as I know.
+12. NURSE: So right now there is no furosemide at home. Has he taken any since he got home?
+13. CAREGIVER: No, none since Saturday.
+14. MEMBER: I'm taking the heart one, though, the metro-something. Or maybe it's the other one, the one that starts with an S. I get them mixed up.
+15. NURSE: That's all right, we'll go through the bottles together. Joan, do you have the bottles there?
+16. CAREGIVER: They're upstairs. I can read them to you this evening.
+17. MEMBER: Can you also tell me if the plan will pay for the new heart pill? Joan says it's expensive.
+18. NURSE: I'll find out and call you back; I don't want to guess.
+19. MEMBER: Okay. I'm not short of breath, just tired.
+20. NURSE: I'm going to contact Dr Lindqvist's office about the furosemide prescription today. If your weight goes up again or you get short of breath, call us or the doctor straight away.
+21. CAREGIVER: We will. Evenings are best to reach me.
+22. NURSE: Thank you both. I'll call back this evening.

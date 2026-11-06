@@ -1,0 +1,8 @@
+member_id,service,reassessment_date,prior_hours_per_week,authorized_hours_per_week,effective_date,notice_date,appeal_window_days,as_of
+SYN-005,personal_care_aide,2026-10-01,20,12,2026-10-15,2026-10-01,60,2026-10-08
+SYN-010,personal_care_aide,2026-09-08,10,10,2026-09-08,2026-09-08,60,2026-10-08
+SYN-017,personal_care_aide,2026-09-11,12,12,2026-09-11,2026-09-11,60,2026-10-08
+SYN-029,personal_care_aide,2026-08-26,10,10,2026-08-26,2026-08-26,60,2026-10-08
+SYN-032,personal_care_aide,2026-04-17,8,8,2026-04-17,2026-04-17,60,2026-10-08
+SYN-034,personal_care_aide,2026-06-24,15,15,2026-06-24,2026-06-24,60,2026-10-08
+SYN-041,personal_care_aide,2026-06-01,20,20,2026-06-01,2026-06-01,60,2026-10-08

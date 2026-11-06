@@ -22,11 +22,10 @@ from app.api.queue import router as queue_router
 from app.core.config import get_settings
 from app.core.logging import configure_logging, register_names
 from app.datalayer_mock.identity.models import Member
-from app.facts.models import ContactPoint
 from app.db.session import get_db
+from app.facts.models import ContactPoint
 from app.workbench.access import AccessDeniedError
 from app.workbench.actions import ActionError
-
 
 request_log = logging.getLogger("casecompass.request")
 log = logging.getLogger("casecompass")
@@ -76,6 +75,7 @@ def create_app() -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origins,
+        allow_origin_regex=settings.cors_origin_regex,
         allow_credentials=False,
         allow_methods=["GET", "POST", "PUT"],
         allow_headers=["Authorization", "Content-Type"],

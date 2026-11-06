@@ -28,12 +28,16 @@ function reasonFrom(body: unknown, status: number): string {
   return `request failed (HTTP ${status})`;
 }
 
+// Same-origin "/api" by default (Vite proxy in development, a rewrite on Vercel). For a backend
+// deployed separately, build with VITE_API_BASE_URL=https://your-backend.example.
+export const API_BASE = (import.meta.env.VITE_API_BASE_URL || "/api").replace(/\/+$/, "");
+
 export async function api<T>(path: string, init: { method?: string; body?: unknown } = {}): Promise<T> {
   const headers: Record<string, string> = {};
   const token = getToken();
   if (token) headers.Authorization = `Bearer ${token}`;
   if (init.body !== undefined) headers["Content-Type"] = "application/json";
-  const response = await fetch(`/api${path}`, {
+  const response = await fetch(`${API_BASE}${path}`, {
     method: init.method ?? "GET",
     headers,
     body: init.body === undefined ? undefined : JSON.stringify(init.body),

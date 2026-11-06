@@ -34,5 +34,11 @@ class SlidingWindowLimiter:
         hits.append(now)
 
 
-def client_key(request: Request) -> str:
+def client_key(request: Request, trust_proxy_headers: bool = False) -> str:
+    """The caller's address. Behind a trusted proxy every request arrives from the proxy, so
+    the first X-Forwarded-For entry (set by the proxy) identifies the client instead."""
+    if trust_proxy_headers:
+        forwarded = request.headers.get("x-forwarded-for", "").split(",")[0].strip()
+        if forwarded:
+            return forwarded
     return request.client.host if request.client else "unknown"

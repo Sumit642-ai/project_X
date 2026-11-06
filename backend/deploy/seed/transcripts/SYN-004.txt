@@ -1,0 +1,22 @@
+1. NURSE: Hello, this is Alma, a care manager with Kayla Morrison's health plan. I'm returning the shelter's call.
+2. CAREGIVER: Hi Alma, this is Tasha at the Riverside case desk. Kayla's here, I'll put her on.
+3. MEMBER: Hi, it's Kayla.
+4. NURSE: Hi Kayla. Before we talk, can you confirm your date of birth?
+5. MEMBER: (gives date of birth; it matches the record)
+6. NURSE: Thank you. How have things been since you left the hospital on Thursday?
+7. MEMBER: Okay. I'm staying here at the shelter for now. It's loud but it's safe.
+8. NURSE: I'm glad you're safe. Can we talk about your medicines?
+9. MEMBER: Yeah. The hospital gave me a few of my buprenorphine doses when I left, I've got maybe three left. My last fill from the pharmacy ran out on the 5th, the day I got discharged.
+10. NURSE: So you have about three doses the hospital gave you, and nothing from the pharmacy since it ran out on November 5th.
+11. MEMBER: Right. I'll be out by the weekend.
+12. CAREGIVER: She doesn't have a way to get to her old pharmacy from here. It's across town.
+13. MEMBER: And I'm on the mood one they started in the hospital, the lamo-something. I have two weeks of that.
+14. NURSE: Thank you. Who prescribes the buprenorphine?
+15. MEMBER: The Riverside clinic, the primary care doctor there.
+16. NURSE: I'll contact the clinic today about a new prescription and ask about a pharmacy near the shelter. Do you have a behavioral health follow-up this week?
+17. MEMBER: Not that I know of.
+18. CAREGIVER: Nothing's been scheduled from our side.
+19. NURSE: I'll work on that too. What's the best way to reach you?
+20. MEMBER: Through the desk here. My phone has no minutes.
+21. CAREGIVER: Weekdays nine to five.
+22. NURSE: Thank you both. I'll call the desk back this afternoon.

@@ -59,6 +59,8 @@ class Settings(BaseSettings):
     cors_origins: list[str] = Field(
         default_factory=lambda: ["http://localhost:5173", "http://127.0.0.1:5173"]
     )
+    # Optional regex for extra origins, e.g. Vercel preview URLs (CORS_ORIGIN_REGEX).
+    cors_origin_regex: str | None = None
     # Sign-in attempts allowed per client address per window (then 429).
     login_rate_limit: int = 20
     login_rate_window_seconds: int = 60
@@ -72,8 +74,12 @@ class Settings(BaseSettings):
     anthropic_api_key: SecretStr | None = None
     ai_draft_model: str = "claude-opus-5-5"
     ai_draft_timeout_seconds: float = 20.0
+    # Checked-in seed files: dial script, demo intraday script, call transcripts (SEED_DIR).
+    seed_dir: Path = REPO_ROOT / "data" / "seed"
     # Synthetic call transcripts standing in for the telephony transcription feed.
     transcripts_dir: Path = REPO_ROOT / "data" / "seed" / "transcripts"
+    # Behind a trusted proxy (e.g. Vercel), take the client address from X-Forwarded-For.
+    trust_proxy_headers: bool = False
 
     @property
     def raw_dir(self) -> Path:

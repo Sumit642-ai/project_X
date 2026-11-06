@@ -1,0 +1,1369 @@
+{
+  "generator": "app.synth",
+  "seed": 20261109,
+  "reference_clock": "2026-11-09T08:00:00-05:00",
+  "claims_loaded_through": "2026-09-25",
+  "members": {
+    "hero": [
+      "SYN-001",
+      "SYN-002",
+      "SYN-003",
+      "SYN-004",
+      "SYN-005"
+    ],
+    "background": [
+      "SYN-006",
+      "SYN-007",
+      "SYN-008",
+      "SYN-009",
+      "SYN-010",
+      "SYN-011",
+      "SYN-012",
+      "SYN-013",
+      "SYN-014",
+      "SYN-015",
+      "SYN-016",
+      "SYN-017",
+      "SYN-018",
+      "SYN-019",
+      "SYN-020",
+      "SYN-021",
+      "SYN-022",
+      "SYN-023",
+      "SYN-024",
+      "SYN-025",
+      "SYN-026",
+      "SYN-027",
+      "SYN-028",
+      "SYN-029",
+      "SYN-030",
+      "SYN-031",
+      "SYN-032",
+      "SYN-033",
+      "SYN-034",
+      "SYN-035",
+      "SYN-036",
+      "SYN-037",
+      "SYN-038",
+      "SYN-039",
+      "SYN-040",
+      "SYN-041",
+      "SYN-042",
+      "SYN-043",
+      "SYN-044",
+      "SYN-045",
+      "SYN-046",
+      "SYN-047",
+      "SYN-048",
+      "SYN-049",
+      "SYN-050"
+    ],
+    "background_imperfection_rate": "5 of 45 per kind"
+  },
+  "files": [
+    {
+      "path": "adt/ADT_20260602T160600_SYN-ADT-000007.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 382,
+      "sha256": "efc5c0764af4ed8655374e63a4a83f99b051e4246cd02d893ae78bba4cbf96b9"
+    },
+    {
+      "path": "adt/ADT_20260606T110900_SYN-ADT-000009.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 371,
+      "sha256": "c38f40620156940469625535f13b931df52a3ed2bbfef649e0ad16eb6c207320"
+    },
+    {
+      "path": "adt/ADT_20260606T134800_SYN-ADT-000008.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 404,
+      "sha256": "32c9e4c0971e26b391773612e6fb822fe91b22cdaad357b8139244b2896d41d7"
+    },
+    {
+      "path": "adt/ADT_20260608T133000_SYN-ADT-000010.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 393,
+      "sha256": "f2289f75eb48f4b470a6401f45357718bc4fe1af1b270cbd2a1c304e5f40dc13"
+    },
+    {
+      "path": "adt/ADT_20260615T202400_SYN-ADT-000011.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 375,
+      "sha256": "5f60d19df0540a4a193f7e927ce1b9fbf136910b423b8d7faf7b6f611149fa45"
+    },
+    {
+      "path": "adt/ADT_20260617T113600_SYN-ADT-000012.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 397,
+      "sha256": "9f18a785740d23079bd3a4ccb93066c5f10ce44cb921ca4640410532c1ddb324"
+    },
+    {
+      "path": "adt/ADT_20260617T170100_SYN-ADT-000013.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 377,
+      "sha256": "effac70f243b4ec6003ba6b3da787d09377cda61e2b3253791db26ca391bb187"
+    },
+    {
+      "path": "adt/ADT_20260619T131200_SYN-ADT-000014.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 399,
+      "sha256": "0b48d1cd49fa1ff3a07d4dfbbe8f1e97917d7c2a5d4b45d27e8332831cf3ce20"
+    },
+    {
+      "path": "adt/ADT_20260620T222700_SYN-ADT-000015.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 378,
+      "sha256": "4efc83658c0c472882be2d95bdfdec04cf4c1bcef8e30e9cbe9250c29172849f"
+    },
+    {
+      "path": "adt/ADT_20260621T015000_SYN-ADT-000016.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 400,
+      "sha256": "e5aa291df684d603be8d949ac676dd8de7de7190c3ff4d7c8af325d17b631bcb"
+    },
+    {
+      "path": "adt/ADT_20260624T122800_SYN-ADT-000017.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 382,
+      "sha256": "687c6636a4809668d23a141462c73bdf2f753ee41b5976a4f22a06c52252a19e"
+    },
+    {
+      "path": "adt/ADT_20260624T190600_SYN-ADT-000019.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 381,
+      "sha256": "77a6650d074f7d8da8a60fb764716061ae5d7e89ebdc68d18537ca06aaf18b12"
+    },
+    {
+      "path": "adt/ADT_20260628T111900_SYN-ADT-000018.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 404,
+      "sha256": "a3f9c4318e2d0d3d39ee72f55a9498e9771dac99c89d235a2990be6796c2848c"
+    },
+    {
+      "path": "adt/ADT_20260628T123500_SYN-ADT-000020.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 403,
+      "sha256": "784f7a91d5ea45661439a8a3dfa03f026243d4f359a4c4f7a64dfafcee4f3a22"
+    },
+    {
+      "path": "adt/ADT_20260704T090000_SYN-ADT-000021.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 381,
+      "sha256": "7e9cdf2c7e9a62228da3b37ee84b8895203bde971a45b72c742a72601253c986"
+    },
+    {
+      "path": "adt/ADT_20260704T195700_SYN-ADT-000023.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 376,
+      "sha256": "8c8745b6d6415b3335aa714d86e713fd4deb8df562c7c6d8d3f854fe9e5a09d8"
+    },
+    {
+      "path": "adt/ADT_20260706T115800_SYN-ADT-000022.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 403,
+      "sha256": "2a494bd36f5abcfe2f3e12171b8cabc425d953d8103bb4dc311f931d7ae17575"
+    },
+    {
+      "path": "adt/ADT_20260706T165700_SYN-ADT-000025.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 378,
+      "sha256": "8ff203be06c69616f972275df99ea0784ec7429d0dfaf5b05960e6c9471fb8b5"
+    },
+    {
+      "path": "adt/ADT_20260707T171900_SYN-ADT-000027.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 367,
+      "sha256": "54a20b6bb255ea41f86227ab8ddeb2523460a40f76b0fdadc6d821ee1d6691ff"
+    },
+    {
+      "path": "adt/ADT_20260707T230800_SYN-ADT-000029.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 377,
+      "sha256": "423f02411520dd40d58575f6a75b83833424800dab6beba297327b1a842a845b"
+    },
+    {
+      "path": "adt/ADT_20260707T233000_SYN-ADT-000030.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 399,
+      "sha256": "5805a0614dd1d5ef79f6c622c7544b7a52490a0c360c4fd0b723390b42124ca4"
+    },
+    {
+      "path": "adt/ADT_20260708T101700_SYN-ADT-000031.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 377,
+      "sha256": "c7879f4f8421739bb94d5df15b86d954ab66c42fcd2b9605d72ef204d6face50"
+    },
+    {
+      "path": "adt/ADT_20260708T141900_SYN-ADT-000026.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 400,
+      "sha256": "19d5d7301073e14c0cc4211c53d6b6ab0910e2e7d62e13bb1572730d793b21b1"
+    },
+    {
+      "path": "adt/ADT_20260709T131800_SYN-ADT-000024.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 398,
+      "sha256": "3e0b1181fb50f834416ac76e71bd4b2da04aa99ec79b642cd5d5d057b6641d38"
+    },
+    {
+      "path": "adt/ADT_20260710T203300_SYN-ADT-000033.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 377,
+      "sha256": "9d497d00e6b7bbe94c01c98df10e7f72d4a51e1c2e14c3987a4b1386d2c4f7f3"
+    },
+    {
+      "path": "adt/ADT_20260711T143300_SYN-ADT-000032.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 399,
+      "sha256": "e4906b4b48d3a53e7901b7063ba429d5ca819626a80109a5dd19b54c486620a4"
+    },
+    {
+      "path": "adt/ADT_20260712T112500_SYN-ADT-000028.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 389,
+      "sha256": "eb0e187b9da5e3af58276964c078d6dc6873092393dd22747699a1a8fc2753cf"
+    },
+    {
+      "path": "adt/ADT_20260712T113100_SYN-ADT-000034.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 399,
+      "sha256": "cfc2c364173e8f184273e0d730b994428b43d7d59d7eff64462975ff9a22caa4"
+    },
+    {
+      "path": "adt/ADT_20260716T171600_SYN-ADT-000035.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 382,
+      "sha256": "41f848d6a11836a9139c48d7702b062f821a8b7031cda36c5aea65e09acf307e"
+    },
+    {
+      "path": "adt/ADT_20260716T174000_SYN-ADT-000036.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 404,
+      "sha256": "ae2b8dea54b9480d3fea450e5cbbefe70da3cc0cefe5af7ff01e5f87253fdf74"
+    },
+    {
+      "path": "adt/ADT_20260718T211800_SYN-ADT-000037.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 378,
+      "sha256": "bb0483dd4d0a21bb3915ea8fee9b6e5ea69126721a0c86a88e1f6b9e42a6689e"
+    },
+    {
+      "path": "adt/ADT_20260719T231400_SYN-ADT-000039.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 382,
+      "sha256": "d4d9f3b3b8a2c758bb3b6eabb64c643c0c9f6a208fa54b43087da0508fe55f90"
+    },
+    {
+      "path": "adt/ADT_20260720T032900_SYN-ADT-000040.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 404,
+      "sha256": "95c30787ba55fc5de130c7777f297eb48e094904b13aa75a3b12233251cb71bd"
+    },
+    {
+      "path": "adt/ADT_20260721T134700_SYN-ADT-000038.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 400,
+      "sha256": "047a2bbbac650aaa15ad20878de51644623b1aa11e5c891abac2c91aa083d3a8"
+    },
+    {
+      "path": "adt/ADT_20260724T153600_SYN-ADT-000041.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 367,
+      "sha256": "287bb201ac4549c1c7040fe408f118ef731bc850965c12c42d93c85658248e23"
+    },
+    {
+      "path": "adt/ADT_20260727T113500_SYN-ADT-000042.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 389,
+      "sha256": "7fb628f5df8cbe402c0cc8d560154640af78ab0812ee8420a4b88864a55d9ab7"
+    },
+    {
+      "path": "adt/ADT_20260727T214900_SYN-ADT-000043.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 378,
+      "sha256": "5c6063b3147f39ab2263a80070053e983f92a960f164c26ae898ec489c31ce9f"
+    },
+    {
+      "path": "adt/ADT_20260801T135900_SYN-ADT-000044.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 400,
+      "sha256": "95bbf2728cd51893f71fe6ca04945103a966c40d790737a0538964c56223fba2"
+    },
+    {
+      "path": "adt/ADT_20260808T132100_SYN-ADT-000045.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 384,
+      "sha256": "be9d06ee18d41d25f5bca0261f4b5fdbd407d4a99b130fd0114f30db4ea8de6e"
+    },
+    {
+      "path": "adt/ADT_20260809T185700_SYN-ADT-000047.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 379,
+      "sha256": "5c103bef7cee0de69af829cd0a67d12b62799e658e5c422b8b88482a3f915e93"
+    },
+    {
+      "path": "adt/ADT_20260811T195700_SYN-ADT-000049.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 367,
+      "sha256": "ad950e1ffaa568428015236a328d7a2c7db1a5d1462a5f855fb2b480365df2fb"
+    },
+    {
+      "path": "adt/ADT_20260812T172200_SYN-ADT-000046.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 406,
+      "sha256": "d94c4b34f49120ed2218f82bc9f13184cfbfd3a61eaed85fc05bfb6ecd650a3a"
+    },
+    {
+      "path": "adt/ADT_20260813T092500_SYN-ADT-000051.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 376,
+      "sha256": "99d78c70d666d2ba0736806f3f6c8ced99d400418f85976ac9e74fd18790a274"
+    },
+    {
+      "path": "adt/ADT_20260813T145800_SYN-ADT-000048.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 401,
+      "sha256": "97903d25736b2e72140ad4c2c8b8c265c4e478ef6c15a1a36e8b67c2ce792f22"
+    },
+    {
+      "path": "adt/ADT_20260813T165800_SYN-ADT-000050.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 389,
+      "sha256": "ace1b55f7e12b399b1ab5b07aa6b9055cd692f8ebfab9b60277e7e35365f67f1"
+    },
+    {
+      "path": "adt/ADT_20260816T164800_SYN-ADT-000053.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 374,
+      "sha256": "36037280798271e7a68420e426c3dc74e68c82259eba24ab6439cf2bc231841e"
+    },
+    {
+      "path": "adt/ADT_20260817T135100_SYN-ADT-000052.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 398,
+      "sha256": "383a66b99b00c2cb039834180117089f7be1b9f003fd2d884544ef49bcd987eb"
+    },
+    {
+      "path": "adt/ADT_20260819T091900_SYN-ADT-000055.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 370,
+      "sha256": "fcf66839460f4b466cda30ad22b1d25fdeb1e099114960a817305e84218fae68"
+    },
+    {
+      "path": "adt/ADT_20260819T105200_SYN-ADT-000057.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 375,
+      "sha256": "35da8f34985e9b6b7ae3dfb0a6be3ba1ceed73892de0b8bb4694d3590755b3a3"
+    },
+    {
+      "path": "adt/ADT_20260820T153000_SYN-ADT-000054.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 396,
+      "sha256": "392176a4f1f63efb189f50b953830ec1c8d59231425fd4fe5bf966680a7f63aa"
+    },
+    {
+      "path": "adt/ADT_20260822T151200_SYN-ADT-000058.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 397,
+      "sha256": "c6ba63086f2670951dd99023fbede90bfb45eb913c1fe72c87a471a85f9fb55f"
+    },
+    {
+      "path": "adt/ADT_20260823T114900_SYN-ADT-000056.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 392,
+      "sha256": "db62002c24f19547ba7704dd3fe152edc4b7e6f8bb0df3a660a5ea6fe6900f87"
+    },
+    {
+      "path": "adt/ADT_20260824T145700_SYN-ADT-000059.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 376,
+      "sha256": "6634b17d5286f4a13fb60d37d3d07d60a4d7b4ce24fb60b83c2cd161d329999c"
+    },
+    {
+      "path": "adt/ADT_20260825T130500_SYN-ADT-000061.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 377,
+      "sha256": "0ca198cd308cbcf1356bd89a22f4fe2547eff6b0767d2fc95cb1e74dfc0eeef5"
+    },
+    {
+      "path": "adt/ADT_20260825T175400_SYN-ADT-000062.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 399,
+      "sha256": "f8f60982484b063957f83289f6ce76317029dfea6b42ca06bc40602393da94f2"
+    },
+    {
+      "path": "adt/ADT_20260827T170400_SYN-ADT-000060.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 398,
+      "sha256": "63dccab8c957ed13cd766d8cc7b3dff38107d433089b4aa271c34446e791f469"
+    },
+    {
+      "path": "adt/ADT_20261006T012800_SYN-ADT-000064.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 398,
+      "sha256": "5f413190f8ad6f2e271bb7f91bae182a5ca0d78b2e01be2e85373c9c9f0ebcec"
+    },
+    {
+      "path": "adt/ADT_20261006T023400_SYN-ADT-000063.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 376,
+      "sha256": "e1ed1602cd6b617d8259b8dc82f0a621f643ed3455deb31d1a0aae48600b0871"
+    },
+    {
+      "path": "adt/ADT_20261006T113500_SYN-ADT-000065.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 380,
+      "sha256": "87e4a862115b10a38da9547d84d7ed91079cadd5922a65b0782e269d9ad22384"
+    },
+    {
+      "path": "adt/ADT_20261009T121500_SYN-ADT-000066.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 402,
+      "sha256": "8844b12ed89107a8db5dd4e5df74578382e753f3e5d8d1309454f89a7d3b5bb2"
+    },
+    {
+      "path": "adt/ADT_20261012T204800_SYN-ADT-000067.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 378,
+      "sha256": "e6b43ef847da86f19b92defdc3bce5b83d6fb684ab98e218b60a34fcab965caf"
+    },
+    {
+      "path": "adt/ADT_20261012T221800_SYN-ADT-000068.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 400,
+      "sha256": "da0d9c01c6ea879d68885449a51080ee11451495511b33d9c8b9ed20f9b9bb64"
+    },
+    {
+      "path": "adt/ADT_20261013T005600_SYN-ADT-000069.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 384,
+      "sha256": "99d68610dd04d06797974e8eb7b217c64de98baca0e535aa504b5eff3b2b98ae"
+    },
+    {
+      "path": "adt/ADT_20261013T022800_SYN-ADT-000070.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 406,
+      "sha256": "279897dad7ff77e841ae71e73aaf76b7c4c7a02f222889854784d47aac3ea43f"
+    },
+    {
+      "path": "adt/ADT_20261013T131000_SYN-ADT-000071.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 381,
+      "sha256": "99f91e66aaa8fd0d43c6d43a927f6189644c6cb49faf38ec2521579c914b2d02"
+    },
+    {
+      "path": "adt/ADT_20261013T160700_SYN-ADT-000072.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 403,
+      "sha256": "aa637ed278b6347f3f1b120f95c5677a09e00810f0bb62f49c970f4a0646fc8e"
+    },
+    {
+      "path": "adt/ADT_20261019T212500_SYN-ADT-000073.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 382,
+      "sha256": "ffbb25cca7a61de778538558d619d1bf27bdd4305c15c841c2925a0977a2817f"
+    },
+    {
+      "path": "adt/ADT_20261021T150500_SYN-ADT-000075.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 378,
+      "sha256": "94905884c317a78d72092f63501a480ae7ebad2e1aacd988fc479e48edf5d949"
+    },
+    {
+      "path": "adt/ADT_20261022T103300_SYN-ADT-000074.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 404,
+      "sha256": "5e6b3f9c14959dc01af179988d8de8428cb81e5af82d585ccd2753f98d4e89ba"
+    },
+    {
+      "path": "adt/ADT_20261024T112000_SYN-ADT-000076.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 400,
+      "sha256": "00a434d8d4abd3218087bf9865c4f4c0686114e0dd3599e26552bf4472223ec7"
+    },
+    {
+      "path": "adt/ADT_20261025T115900_SYN-ADT-000077.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 377,
+      "sha256": "862171425fbff000cba8f342f510e76dc419a7bcc242066893d6552323fde788"
+    },
+    {
+      "path": "adt/ADT_20261029T071000_SYN-ADT-000003.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 365,
+      "sha256": "ee6fb2ce6c2450643d85803c797519dc9bc9b87d03ad32888c311d95338af4a1"
+    },
+    {
+      "path": "adt/ADT_20261030T123100_SYN-ADT-000078.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 399,
+      "sha256": "5b380f683376cd628a3a88437b16fe137c7e689063e46ddba263c5a31ea8ada3"
+    },
+    {
+      "path": "adt/ADT_20261102T150100_SYN-ADT-000079.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 384,
+      "sha256": "cf6a5b9921434479fe38f1e68c1e4992124d28b1bf8162af0b3d92a1f996c41f"
+    },
+    {
+      "path": "adt/ADT_20261103T150500_SYN-ADT-000001.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 380,
+      "sha256": "522e1d6ab38ff394ca4056570294f416b13c71503ece5e2469b4c8e54f78f294"
+    },
+    {
+      "path": "adt/ADT_20261105T121000_SYN-ADT-000006.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 359,
+      "sha256": "369429eb82c1cd493f946c52b62ef20090377e4baf9d78d474597b929a01ee02"
+    },
+    {
+      "path": "adt/ADT_20261105T123300_SYN-ADT-000080.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 406,
+      "sha256": "1ca39dc16ec210313ca701dec2b08a061b5e9a79fd880b29c741d6c1b305807b"
+    },
+    {
+      "path": "adt/ADT_20261107T063000_SYN-ADT-000004.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 365,
+      "sha256": "a2365d519bc568898d2c402c6db8396bb72f7963461058e91ded0f22486615ac"
+    },
+    {
+      "path": "adt/ADT_20261107T063100_SYN-ADT-000005.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 387,
+      "sha256": "628b6d90b7511328b6b2f238515cbcd4664fc64925e55ec6933515ab413249a7"
+    },
+    {
+      "path": "adt/ADT_20261107T141200_SYN-ADT-000002.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 402,
+      "sha256": "535da121b5b98e5f5441da897e76fa2c1397afc3c1160e326e389e1634fb28fc"
+    },
+    {
+      "path": "adt/ADT_20261107T223800_SYN-ADT-000082.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 399,
+      "sha256": "301fb494c1a2454132a7d230b184457486fc39d1f2e1aec643c297d989e788bd"
+    },
+    {
+      "path": "adt/ADT_20261108T030200_SYN-ADT-000081.hl7",
+      "feed": "adt",
+      "rows": 1,
+      "bytes": 377,
+      "sha256": "030bf0d770e70d7495311757835649e6dc115de1281fd6d15a446e18c1985bb6"
+    },
+    {
+      "path": "care_gaps/care_gaps_20261108.csv",
+      "feed": "care_gaps",
+      "rows": 14,
+      "bytes": 1533,
+      "sha256": "c3a31b0fffbc1892f912bbff639f49922457ac9045ce5a2e82c33eb71c577fc3"
+    },
+    {
+      "path": "claims/claims_837_20261108.csv",
+      "feed": "claims",
+      "rows": 127,
+      "bytes": 12483,
+      "sha256": "ed9147c67d09c933274b78a1224ed68edd11c6833d8d6d6132168516aa6b9cb4"
+    },
+    {
+      "path": "cm_platform/consents_20261109.json",
+      "feed": "cm_platform",
+      "rows": 31,
+      "bytes": 11987,
+      "sha256": "ae3d94506a0ef31b3de214112dfbdb4c76d0e8bd126a3ff4c015f8ddc475591d"
+    },
+    {
+      "path": "cm_platform/contact_points_20261109.json",
+      "feed": "cm_platform",
+      "rows": 69,
+      "bytes": 24493,
+      "sha256": "3827fd42e2e3c1d3000beb207ccbd015f3ffa666611120138aed50f77107f0cf"
+    },
+    {
+      "path": "cm_platform/outreach_20261109.json",
+      "feed": "cm_platform",
+      "rows": 71,
+      "bytes": 17729,
+      "sha256": "0d4098a38da88ac1d7e20f4bc40d7bfe091bc850ea6511a9a9b6a5edbdf18395"
+    },
+    {
+      "path": "cm_platform/preferences_20261109.json",
+      "feed": "cm_platform",
+      "rows": 50,
+      "bytes": 7878,
+      "sha256": "1bc21e4108a4e3831581b855c327fa8ceb7136358ea694e3205e69852d334e78"
+    },
+    {
+      "path": "documents/CCDA_20260606_SYN-DOC-0004.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2274,
+      "sha256": "d2e917504b247e2ff6c7126bc7331a09117e750d213be8bc1b280698c6e57a89"
+    },
+    {
+      "path": "documents/CCDA_20260608_SYN-DOC-0005.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2986,
+      "sha256": "b237da6773a89592f19af527c2570945ad948731b732c7d8bf34241d6b472b24"
+    },
+    {
+      "path": "documents/CCDA_20260617_SYN-DOC-0006.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2684,
+      "sha256": "0a2443cf9235a3f5121d2c5082c607df7ca2792faf20e84719ff49db5a90781c"
+    },
+    {
+      "path": "documents/CCDA_20260619_SYN-DOC-0007.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2691,
+      "sha256": "435d3c93788591ac831ffbaec9650a03dd6bdf052007317992884461a0530638"
+    },
+    {
+      "path": "documents/CCDA_20260628_SYN-DOC-0008.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2757,
+      "sha256": "39ce3cb3d390d22f2e54872595904100db5d9f93d6063b5011df4a9853da6153"
+    },
+    {
+      "path": "documents/CCDA_20260706_SYN-DOC-0009.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2284,
+      "sha256": "4da13d0c0bcd5467c423d60b1f23843c1fe5e18348eaea8f7a5a1c204a60d620"
+    },
+    {
+      "path": "documents/CCDA_20260708_SYN-DOC-0011.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2675,
+      "sha256": "c22ed2d22363da7a2329091fa2a55bfe8036a7444e582f6607327d3abad0f52e"
+    },
+    {
+      "path": "documents/CCDA_20260709_SYN-DOC-0010.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2672,
+      "sha256": "6bbdd0bda0485a71500c1a333c351be898889f4552bc0b5f2f7881505f07bc03"
+    },
+    {
+      "path": "documents/CCDA_20260711_SYN-DOC-0013.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2691,
+      "sha256": "06d5d7e5b1f318827a1b60c93a12bf7ef288c81171ef6a9d9c4fa178661ed274"
+    },
+    {
+      "path": "documents/CCDA_20260712_SYN-DOC-0012.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2689,
+      "sha256": "af4d085291a662e01b3bd8b10c41b453bbb6e7d7cdf724198c4ccd8f9f5f0380"
+    },
+    {
+      "path": "documents/CCDA_20260712_SYN-DOC-0014.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 3009,
+      "sha256": "3f4875cb5eb8d3dd1765997db1e29b741c513f432527c753deedb0fed76835b9"
+    },
+    {
+      "path": "documents/CCDA_20260727_SYN-DOC-0015.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 3011,
+      "sha256": "9cf5fe93ddf51c6765a3b3bed945ee707ce1bee7a79a6485047cf971e5656804"
+    },
+    {
+      "path": "documents/CCDA_20260812_SYN-DOC-0016.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2685,
+      "sha256": "d78db69918e0f3fcda40242f9a2d3f0447bfc9044fb8206c77b6e60ffe9b1910"
+    },
+    {
+      "path": "documents/CCDA_20260813_SYN-DOC-0017.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2262,
+      "sha256": "47c90703f6123458322577b136c4832f9f5f342492f9dbc1cf07f4c3ba95eb3e"
+    },
+    {
+      "path": "documents/CCDA_20260813_SYN-DOC-0018.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 3019,
+      "sha256": "0d07959cd1bba30be72fbdf9baf9086845d936d5fb6b7fe67e4fac1686cc931c"
+    },
+    {
+      "path": "documents/CCDA_20260817_SYN-DOC-0019.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 3020,
+      "sha256": "ca313cd639b874210b39f82196b4a18dc30ff4f225b16da815d5376a4ac4ea58"
+    },
+    {
+      "path": "documents/CCDA_20260820_SYN-DOC-0020.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2707,
+      "sha256": "69df12eadd23d0ae957e8150b892f1be68e6de56806a94b8cbc418b20722c683"
+    },
+    {
+      "path": "documents/CCDA_20260823_SYN-DOC-0021.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2280,
+      "sha256": "b17f6f0a80439006fdd102d97d0a3ecf21a637f123f3fd03119401d7251f2344"
+    },
+    {
+      "path": "documents/CCDA_20261009_SYN-DOC-0022.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2683,
+      "sha256": "726bf5c32b57f36d90f4464026355456ccd14d8941744ad22f27e6abb0210ffd"
+    },
+    {
+      "path": "documents/CCDA_20261022_SYN-DOC-0023.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2268,
+      "sha256": "dbbf47721b60a335ab46c6c3844d9bbef8dfeb13ead125853329f9d59a63a993"
+    },
+    {
+      "path": "documents/CCDA_20261024_SYN-DOC-0024.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 3042,
+      "sha256": "3d780ef34c8cc1648c2d10010598b8a6bf008630aa75cfd34de6c89439c8d967"
+    },
+    {
+      "path": "documents/CCDA_20261030_SYN-DOC-0025.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 3003,
+      "sha256": "a91219ae2a6989a9de39455d4963d0bd31b9995d213c9d5daee3724ce9109028"
+    },
+    {
+      "path": "documents/CCDA_20261105_SYN-DOC-0003.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2744,
+      "sha256": "6de47b3dae65d9c39ae99f129027a644213efbf24817e3b02877c38d7f80bfae"
+    },
+    {
+      "path": "documents/CCDA_20261105_SYN-DOC-0026.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2689,
+      "sha256": "7703bfa31f3d86f93c3820ab16686e8697d62a10c9a8f853d9d4cc9dd2de4b64"
+    },
+    {
+      "path": "documents/CCDA_20261107_SYN-DOC-0001.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 2003,
+      "sha256": "22781f0d6a371491b4ec6cfc3934725d18fbbedfd2ca182cc3d398bfc78aed9f"
+    },
+    {
+      "path": "documents/CCDA_20261107_SYN-DOC-0002.xml",
+      "feed": "documents",
+      "rows": 1,
+      "bytes": 1772,
+      "sha256": "e58760a96b90e481f7e7856d4d9e093fe81cf8e8bbe356d73b45bea2c4a9b231"
+    },
+    {
+      "path": "documents/hie_requests_20261108.csv",
+      "feed": "documents",
+      "rows": 18,
+      "bytes": 2176,
+      "sha256": "7bb1825ce643ab97891d41a0ab182fa4347559ca475847b62c5be27e0c42e851"
+    },
+    {
+      "path": "eligibility/eligibility_834_20261108.csv",
+      "feed": "eligibility",
+      "rows": 56,
+      "bytes": 9016,
+      "sha256": "e67dc58e5784f7467f5a72e4562aaa0f7d766ebf266827e1b50666953b9507f8"
+    },
+    {
+      "path": "formulary/formulary_20261101.csv",
+      "feed": "formulary",
+      "rows": 39,
+      "bytes": 2462,
+      "sha256": "408bd0a7766b05968d372356f67931b210979b244afe46530e59cae88675dec3"
+    },
+    {
+      "path": "labs/lab_results_20261108.csv",
+      "feed": "labs",
+      "rows": 34,
+      "bytes": 2950,
+      "sha256": "6a699365211ed58de108e280eda6febd3a34edfef4485c02a5e4ce68c014f36a"
+    },
+    {
+      "path": "medicaid/ltss_aide_hours_20261008.csv",
+      "feed": "medicaid",
+      "rows": 7,
+      "bytes": 693,
+      "sha256": "02972a5d8df34cca3ecd04d83e438c6fce6fc7365dcdabf7587bb7c3d1306907"
+    },
+    {
+      "path": "medicaid/nemt_trips_20261101.csv",
+      "feed": "medicaid",
+      "rows": 11,
+      "bytes": 1232,
+      "sha256": "a289f30823eb6593c163e004fd2f3f95c706823ab65ba19999dd835bec669fb4"
+    },
+    {
+      "path": "part2/new_dawn_notes_20261101.csv",
+      "feed": "part2",
+      "rows": 3,
+      "bytes": 568,
+      "sha256": "32228679a79cb22a19a48879ad7a363aab08df23f0b9675a63e54bb9db5f28d8"
+    },
+    {
+      "path": "pharmacy/pharmacy_ncpdp_20261108.csv",
+      "feed": "pharmacy",
+      "rows": 548,
+      "bytes": 87943,
+      "sha256": "8b296619a618a004abe4a426bd7785f1afbbb956c76ccc1e0b9f206532e7c8cd"
+    },
+    {
+      "path": "risk/risk_scores_20261101.csv",
+      "feed": "risk",
+      "rows": 46,
+      "bytes": 2514,
+      "sha256": "39a14a2a00752ee4007ad3191b15355f1da91b715a2193b833922c014cdc5f66"
+    },
+    {
+      "path": "sdoh/screens_20261108.csv",
+      "feed": "sdoh",
+      "rows": 62,
+      "bytes": 5116,
+      "sha256": "ef7a80ac35b15c31d19bd98dc7de7e3a07abc8c2a6a3521b3ec58633f09e7c65"
+    },
+    {
+      "path": "um/auth_requests_20261108.csv",
+      "feed": "um",
+      "rows": 14,
+      "bytes": 1849,
+      "sha256": "fe826874a3512ff456f59f4eb957acef8a2213fa0b355d4204c1be85d56dc0a6"
+    }
+  ],
+  "imperfections": [
+    {
+      "id": "I-01",
+      "title": "Hospital-created duplicate record",
+      "feeds": [
+        "adt",
+        "documents"
+      ],
+      "hero_members": [
+        "SYN-001"
+      ],
+      "background_members": [
+        "SYN-009",
+        "SYN-016",
+        "SYN-032",
+        "SYN-037",
+        "SYN-044"
+      ]
+    },
+    {
+      "id": "I-02",
+      "title": "Discharge dose differs from pharmacy fill",
+      "feeds": [
+        "documents",
+        "pharmacy"
+      ],
+      "hero_members": [
+        "SYN-001"
+      ],
+      "background_members": [
+        "SYN-019",
+        "SYN-022",
+        "SYN-027",
+        "SYN-032",
+        "SYN-041"
+      ]
+    },
+    {
+      "id": "I-03",
+      "title": "Maintenance drug ran out before admission",
+      "feeds": [
+        "pharmacy",
+        "adt"
+      ],
+      "hero_members": [
+        "SYN-001"
+      ],
+      "background_members": [
+        "SYN-012",
+        "SYN-013",
+        "SYN-036",
+        "SYN-045",
+        "SYN-048"
+      ]
+    },
+    {
+      "id": "I-04",
+      "title": "Discharge summary requested, never received",
+      "feeds": [
+        "documents"
+      ],
+      "hero_members": [
+        "SYN-001"
+      ],
+      "background_members": [
+        "SYN-010",
+        "SYN-011",
+        "SYN-016",
+        "SYN-044",
+        "SYN-045"
+      ]
+    },
+    {
+      "id": "I-05",
+      "title": "ADT without diagnosis; inpatient claim missing",
+      "feeds": [
+        "adt",
+        "claims"
+      ],
+      "hero_members": [
+        "SYN-001"
+      ],
+      "background_members": [
+        "SYN-028",
+        "SYN-032",
+        "SYN-035",
+        "SYN-041",
+        "SYN-048"
+      ]
+    },
+    {
+      "id": "I-06",
+      "title": "Apparent refill gap is a non-formulary reject",
+      "feeds": [
+        "pharmacy",
+        "formulary"
+      ],
+      "hero_members": [
+        "SYN-002"
+      ],
+      "background_members": [
+        "SYN-014",
+        "SYN-017",
+        "SYN-019",
+        "SYN-031",
+        "SYN-050"
+      ]
+    },
+    {
+      "id": "I-07",
+      "title": "PCP visit not in claims; inferred from new prescription",
+      "feeds": [
+        "pharmacy",
+        "claims"
+      ],
+      "hero_members": [
+        "SYN-002"
+      ],
+      "background_members": [
+        "SYN-025",
+        "SYN-027",
+        "SYN-028",
+        "SYN-041",
+        "SYN-042"
+      ]
+    },
+    {
+      "id": "I-08",
+      "title": "English voicemails to a non-English speaker",
+      "feeds": [
+        "cm_platform",
+        "eligibility"
+      ],
+      "hero_members": [
+        "SYN-002"
+      ],
+      "background_members": [
+        "SYN-016",
+        "SYN-020",
+        "SYN-030",
+        "SYN-040",
+        "SYN-045"
+      ]
+    },
+    {
+      "id": "I-09",
+      "title": "Disconnected number; newer one on pharmacy profile",
+      "feeds": [
+        "cm_platform",
+        "pharmacy",
+        "eligibility"
+      ],
+      "hero_members": [
+        "SYN-003"
+      ],
+      "background_members": [
+        "SYN-035",
+        "SYN-040",
+        "SYN-041",
+        "SYN-042",
+        "SYN-050"
+      ]
+    },
+    {
+      "id": "I-10",
+      "title": "ED visits only in ADT, not in claims",
+      "feeds": [
+        "adt",
+        "claims"
+      ],
+      "hero_members": [
+        "SYN-003"
+      ],
+      "background_members": [
+        "SYN-018",
+        "SYN-019",
+        "SYN-026",
+        "SYN-031",
+        "SYN-038"
+      ]
+    },
+    {
+      "id": "I-11",
+      "title": "No SMS consent on the new number",
+      "feeds": [
+        "cm_platform"
+      ],
+      "hero_members": [
+        "SYN-003"
+      ],
+      "background_members": [
+        "SYN-035",
+        "SYN-040",
+        "SYN-041",
+        "SYN-042",
+        "SYN-050"
+      ]
+    },
+    {
+      "id": "I-12",
+      "title": "Part 2 counselling notes vs visible primary-care buprenorphine",
+      "feeds": [
+        "part2",
+        "pharmacy"
+      ],
+      "hero_members": [
+        "SYN-004"
+      ],
+      "background_members": [],
+      "background_note": "Part 2 records exist for SYN-004 only"
+    },
+    {
+      "id": "I-13",
+      "title": "Housing screen stale and now wrong",
+      "feeds": [
+        "sdoh",
+        "documents",
+        "cm_platform"
+      ],
+      "hero_members": [
+        "SYN-004"
+      ],
+      "background_members": [
+        "SYN-027",
+        "SYN-029",
+        "SYN-032",
+        "SYN-036",
+        "SYN-046"
+      ]
+    },
+    {
+      "id": "I-14",
+      "title": "Maiden-name duplicate eligibility record",
+      "feeds": [
+        "eligibility"
+      ],
+      "hero_members": [
+        "SYN-004"
+      ],
+      "background_members": [
+        "SYN-012",
+        "SYN-017",
+        "SYN-039",
+        "SYN-041",
+        "SYN-049"
+      ]
+    },
+    {
+      "id": "I-15",
+      "title": "Representative form expired",
+      "feeds": [
+        "eligibility",
+        "cm_platform"
+      ],
+      "hero_members": [
+        "SYN-005"
+      ],
+      "background_members": [
+        "SYN-018",
+        "SYN-034",
+        "SYN-047",
+        "SYN-048",
+        "SYN-050"
+      ]
+    },
+    {
+      "id": "I-16",
+      "title": "LTSS file 32 days old (file-level lag)",
+      "feeds": [
+        "medicaid"
+      ],
+      "hero_members": [
+        "SYN-005"
+      ],
+      "background_members": [],
+      "background_note": "file-level lag: the whole LTSS file is stale"
+    },
+    {
+      "id": "I-17",
+      "title": "Authorisation past its decision date",
+      "feeds": [
+        "um"
+      ],
+      "hero_members": [
+        "SYN-005"
+      ],
+      "background_members": [
+        "SYN-011",
+        "SYN-016",
+        "SYN-017",
+        "SYN-041",
+        "SYN-045"
+      ]
+    }
+  ],
+  "intentionally_absent": [
+    {
+      "member_id": "SYN-001",
+      "feed": "claims",
+      "record": "Inpatient claim for 2026-11-03 admission",
+      "imperfection": "I-05"
+    },
+    {
+      "member_id": "SYN-002",
+      "feed": "claims",
+      "record": "PCP visit 2026-09-16 (inferred from new prescription)",
+      "imperfection": "I-07"
+    },
+    {
+      "member_id": "SYN-003",
+      "feed": "claims",
+      "record": "ED visit 2026-10-28 (ADT only)",
+      "imperfection": "I-10"
+    },
+    {
+      "member_id": "SYN-003",
+      "feed": "claims",
+      "record": "ED visit 2026-11-06 (ADT only)",
+      "imperfection": "I-10"
+    },
+    {
+      "member_id": "SYN-001",
+      "feed": "pharmacy",
+      "record": "Furosemide 80 mg fill (new discharge dose)",
+      "imperfection": "I-02"
+    },
+    {
+      "member_id": "SYN-001",
+      "feed": "documents",
+      "record": "St Brigid discharge summary (requested 2026-11-07 15:02, never received)",
+      "imperfection": "I-04"
+    },
+    {
+      "member_id": "SYN-001",
+      "feed": "um",
+      "record": "Part D coverage determination for sacubitril/valsartan (not yet requested; prescriber files)",
+      "imperfection": "I-02"
+    },
+    {
+      "member_id": "SYN-031",
+      "feed": "claims",
+      "record": "ed claim for 2026-10-05 (after cut-off)",
+      "imperfection": "I-10"
+    },
+    {
+      "member_id": "SYN-028",
+      "feed": "claims",
+      "record": "inpatient claim for 2026-10-06 (after cut-off)",
+      "imperfection": "I-05"
+    },
+    {
+      "member_id": "SYN-026",
+      "feed": "claims",
+      "record": "ed claim for 2026-10-12 (after cut-off)",
+      "imperfection": "I-10"
+    },
+    {
+      "member_id": "SYN-018",
+      "feed": "claims",
+      "record": "ed claim for 2026-10-12 (after cut-off)",
+      "imperfection": "I-10"
+    },
+    {
+      "member_id": "SYN-019",
+      "feed": "claims",
+      "record": "ed claim for 2026-10-13 (after cut-off)",
+      "imperfection": "I-10"
+    },
+    {
+      "member_id": "SYN-048",
+      "feed": "claims",
+      "record": "inpatient claim for 2026-10-19 (after cut-off)",
+      "imperfection": "I-05"
+    },
+    {
+      "member_id": "SYN-035",
+      "feed": "claims",
+      "record": "inpatient claim for 2026-10-21 (after cut-off)",
+      "imperfection": "I-05"
+    },
+    {
+      "member_id": "SYN-032",
+      "feed": "claims",
+      "record": "inpatient claim for 2026-10-25 (after cut-off)",
+      "imperfection": "I-05"
+    },
+    {
+      "member_id": "SYN-041",
+      "feed": "claims",
+      "record": "inpatient claim for 2026-11-02 (after cut-off)",
+      "imperfection": "I-05"
+    },
+    {
+      "member_id": "SYN-038",
+      "feed": "claims",
+      "record": "ed claim for 2026-11-07 (after cut-off)",
+      "imperfection": "I-10"
+    },
+    {
+      "member_id": "SYN-025",
+      "feed": "claims",
+      "record": "PCP visit around 2026-10-08 (inferred from new prescription)",
+      "imperfection": "I-07"
+    },
+    {
+      "member_id": "SYN-027",
+      "feed": "claims",
+      "record": "PCP visit around 2026-10-04 (inferred from new prescription)",
+      "imperfection": "I-07"
+    },
+    {
+      "member_id": "SYN-028",
+      "feed": "claims",
+      "record": "PCP visit around 2026-10-14 (inferred from new prescription)",
+      "imperfection": "I-07"
+    },
+    {
+      "member_id": "SYN-041",
+      "feed": "claims",
+      "record": "PCP visit around 2026-11-06 (inferred from new prescription)",
+      "imperfection": "I-07"
+    },
+    {
+      "member_id": "SYN-042",
+      "feed": "claims",
+      "record": "PCP visit around 2026-10-02 (inferred from new prescription)",
+      "imperfection": "I-07"
+    }
+  ]
+}
